@@ -45,6 +45,19 @@ string vowel(string text){
 	return text;
 }
 
+string punct(string text){
+	//remove punctuation
+	for (int index = 0; index < text.length(); index++){
+		char ch = text[index];
+		if (ispunct(ch)){
+			//cout << ch << endl;
+			text.erase(text.begin() + index);
+			index--;
+		}
+	}
+	return text;
+}
+
 string consonant(string text){
 	//remove consonants
 	string vowels = "aeiouAEIOU";
@@ -73,10 +86,23 @@ string upper(string text){
 }
 
 string lower(string text){
-	//remove Uppercase letters 
+	//remove lowercase letters 
 	for (int index = 0; index < text.length(); index++){
 		char ch = text[index];
 		if (islower(ch)){
+			//cout << ch << endl;
+			text.erase(text.begin() + index);
+			index--;
+		}
+	}
+	return text;
+}
+
+string number(string text){
+	//remove numbers
+	for (int index = 0; index < text.length(); index++){
+		char ch = text[index];
+		if (isdigit(ch)){
 			//cout << ch << endl;
 			text.erase(text.begin() + index);
 			index--;
@@ -96,7 +122,7 @@ int main(int argc, char *argv[]) { //Takes in command line args
 	if (argc == 1){
 		usage(argv[0], "Enter a filename.");
 	}
-	else if(argc >= 2) {
+	else if(argc >= 3) { //must have 3 arguments
 		infile.open(argv[1]);
 		if(infile.is_open()){
 			br = &infile;
@@ -121,6 +147,12 @@ int main(int argc, char *argv[]) { //Takes in command line args
 		fullText.push_back('\n');
 		//cout << fullText << endl;
 	}
+
+	//while(file.good()){
+	//{
+	//	char ch = file.get();
+}
+}
 	cout << fullText << endl;
 
 	cout << "There were " << argc << " arguments on the command line" << endl;
@@ -129,7 +161,7 @@ int main(int argc, char *argv[]) { //Takes in command line args
 	//check if all arguments are filters 
 	for (int it=2; it<argc; it++){
 		string arg = argv[it];
-		if (arg.compare("letter")==0){
+		if (arg=="letter"){ //== instead of .compare
 			cout << "letter" << endl;
 			fullText = letter(fullText);
 			letterCalled = true;
@@ -147,15 +179,21 @@ int main(int argc, char *argv[]) { //Takes in command line args
 		}
 		else if (arg.compare("upper")==0){
 			cout << "upper" << endl;
+			fullText = upper(fullText);
+			cout << fullText<<endl;
 		}
 		else if (arg.compare("lower")==0){
 			cout << "lower" << endl;
+			fullText = lower(fullText);
+			cout << fullText<<endl;
 		}
 		else if (arg.compare("word")==0){
 			cout << "word" << endl;
 		}
 		else if (arg.compare("number")==0){
 			cout << "number" << endl;
+			fullText = number(fullText);
+			cout << fullText<<endl;
 		}
 		else if (arg.compare("space")==0){
 			cout << "space" << endl;
