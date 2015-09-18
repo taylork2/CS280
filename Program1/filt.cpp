@@ -18,105 +18,12 @@ void  usage(char *progname, string msg) {
 	cerr << "Usage is: " << progname << " [filename] [arg1] [arg2] [etc.]" <<endl;
 }
 
-string letter(string text){
-	//remove letters 
-	for (int index = 0; index < text.length(); index++){
-		char ch = text[index];
-		if (isalpha(ch)){
-			//cout << ch << endl;
-			text.erase(text.begin() + index);
-			index--;
-		}
-	}
-	return text;
-}	
-
-string vowel(string text){
-	//remove vowels 
-	string vowels = "aeiouAEIOU";
-	for (int index = 0; index < text.length(); index++){
-		char ch = text[index];
-		if (vowels.find(ch)<vowels.length()){
-			//cout << ch << endl;
-			text.erase(text.begin() + index);
-			index--;
-		}
-	}
-	return text;
-}
-
-string punct(string text){
-	//remove punctuation
-	for (int index = 0; index < text.length(); index++){
-		char ch = text[index];
-		if (ispunct(ch)){
-			//cout << ch << endl;
-			text.erase(text.begin() + index);
-			index--;
-		}
-	}
-	return text;
-}
-
-string consonant(string text){
-	//remove consonants
-	string vowels = "aeiouAEIOU";
-	for (int index = 0; index < text.length(); index++){
-		char ch = text[index];
-		if (vowels.find(ch)>=vowels.length()&&isalpha(ch)){
-			//cout << ch << endl;
-			text.erase(text.begin() + index);
-			index--;
-		}
-	}
-	return text;
-}
-
-string upper(string text){
-	//remove Uppercase letters 
-	for (int index = 0; index < text.length(); index++){
-		char ch = text[index];
-		if (isupper(ch)){
-			//cout << ch << endl;
-			text.erase(text.begin() + index);
-			index--;
-		}
-	}
-	return text;
-}
-
-string lower(string text){
-	//remove lowercase letters 
-	for (int index = 0; index < text.length(); index++){
-		char ch = text[index];
-		if (islower(ch)){
-			//cout << ch << endl;
-			text.erase(text.begin() + index);
-			index--;
-		}
-	}
-	return text;
-}
-
-string number(string text){
-	//remove numbers
-	for (int index = 0; index < text.length(); index++){
-		char ch = text[index];
-		if (isdigit(ch)){
-			//cout << ch << endl;
-			text.erase(text.begin() + index);
-			index--;
-		}
-	}
-	return text;
-}
-
 int main(int argc, char *argv[]) { //Takes in command line args 
 	istream *br;
 	string text;
 	string fullText;
 	ifstream infile;
-	//string filters[9] = {"letter", "vowel", "consonant", "word", "number", "space", "punct", "upper", "lower"};
+	string filters[9] = {"letter", "vowel", "consonant", "word", "number", "space", "punct", "upper", "lower"};
 
 	//Opening file 
 	if (argc == 1){
@@ -142,64 +49,59 @@ int main(int argc, char *argv[]) { //Takes in command line args
 	//Done opening file 
 
 	//Go through text line by line, put each line into fullText  
-	while(getline(*br, text)){
-		fullText += text;
-		fullText.push_back('\n');
-		//cout << fullText << endl;
-	}
+	// while(getline(*br, text)){
+	// 	fullText += text;
+	// 	fullText.push_back('\n');
+	// 	//cout << fullText << endl;
+	// }
 
 	//while(file.good()){
 	//{
 	//	char ch = file.get();
-}
-}
-	cout << fullText << endl;
+	//}
+	//cout << fullText << endl;
 
 	cout << "There were " << argc << " arguments on the command line" << endl;
 
 	bool letterCalled = false;
+	bool vowelCalled = false;
+	bool consonantCalled = false;
+	bool upperCalled = false;
+	bool lowerCalled = false;
+	bool wordCalled = false; 
+	bool punctCalled = false;
+	bool numberCalled = false;
+	bool spaceCalled = false;
+
 	//check if all arguments are filters 
 	for (int it=2; it<argc; it++){
 		string arg = argv[it];
-		if (arg=="letter"){ //== instead of .compare
-			cout << "letter" << endl;
-			fullText = letter(fullText);
+		if (arg=="letter"){
 			letterCalled = true;
-			cout << fullText << endl;
 		}
-		else if (arg.compare("vowel")==0){
-			cout << "vowel" << endl;
-			fullText = vowel(fullText);
-			cout << fullText << endl;
+		else if (arg=="vowel"){
+			vowelCalled = true;				
 		}
-		else if (arg.compare("consonant")==0){
-			cout << "consonant" << endl;
-			fullText = consonant(fullText);
-			cout << fullText << endl;
+		else if (arg=="consonant"){
+			consonantCalled = true;
 		}
-		else if (arg.compare("upper")==0){
-			cout << "upper" << endl;
-			fullText = upper(fullText);
-			cout << fullText<<endl;
+		else if (arg=="upper"){
+			upperCalled = true;
 		}
-		else if (arg.compare("lower")==0){
-			cout << "lower" << endl;
-			fullText = lower(fullText);
-			cout << fullText<<endl;
+		else if (arg=="lower"){
+			lowerCalled = true;
 		}
-		else if (arg.compare("word")==0){
-			cout << "word" << endl;
+		else if (arg=="word"){ //what do????? 
+			wordCalled = true;
 		}
-		else if (arg.compare("number")==0){
-			cout << "number" << endl;
-			fullText = number(fullText);
-			cout << fullText<<endl;
+		else if (arg=="number"){
+			numberCalled = true;
 		}
-		else if (arg.compare("space")==0){
-			cout << "space" << endl;
+		else if (arg=="space"){ //what do?????
+			spaceCalled = true;
 		}
-		else if (arg.compare("punct")==0){
-			cout << "punct" << endl;
+		else if (arg=="punct"){
+			punctCalled = true;
 		}
 		else{
 			usage(argv[0], "Unrecognized filter: " + arg);
@@ -207,5 +109,47 @@ int main(int argc, char *argv[]) { //Takes in command line args
 		}
 	}
 
+	string vowels = "aeiouAEIOU";
+	while(infile.good()) {
+		char ch = infile.get();
+		if (isalpha(ch) && letterCalled){ 
+			cout << ch << endl;
+			continue;
+		}
+		else if (vowelCalled && vowels.find(ch) < vowels.length()){
+			cout << ch << endl;
+			continue;
+		}
+		else if(consonantCalled && isalpha(ch) && vowels.find(ch) >= vowels.length()){
+			cout << ch << endl;
+			continue;
+		}
+		else if(upperCalled && isupper(ch)){
+			cout << ch << endl;
+			continue;
+		}
+		else if(lowerCalled && islower(ch)){
+			cout << ch << endl;
+			continue;
+		}
+		else if(wordCalled){ //what do????? 
+			cout << ch << endl;
+		}
+		else if(numberCalled && isdigit(ch)){
+			cout << ch << endl;
+			continue;
+		}
+		else if(spaceCalled && isdigit(ch)){ //what do???? 
+			cout << ch << endl;
+		}
+		else if(punctCalled && ispunct(ch)){
+			cout << ch << endl;
+			continue;
+		}
+		else {
+			fullText += ch;
+		}
+	}
+	cout << fullText;
 	return 0;
 }
