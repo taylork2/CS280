@@ -19,17 +19,13 @@ void  usage(char *progname, string msg) {
 }
 
 int main(int argc, char *argv[]) { //Takes in command line args 
-	istream *br;
+	istream *br; 
 	string text;
 	string fullText;
 	ifstream infile;
-	string filters[9] = {"letter", "vowel", "consonant", "word", "number", "space", "punct", "upper", "lower"};
 
 	//Opening file 
-	if (argc == 1){
-		usage(argv[0], "Enter a filename.");
-	}
-	else if(argc >= 3) { //must have 3 arguments
+	if(argc >= 3) { //must have at least 3 arguments
 		infile.open(argv[1]);
 		if(infile.is_open()){
 			br = &infile;
@@ -39,27 +35,15 @@ int main(int argc, char *argv[]) { //Takes in command line args
 			return 1;
 		}
 	}
+	else {
+		usage(argv[0], "Enter a filename and filter.");
+		return 1;
+	}
 
-	if( br->good() )
-		cout << "GOOD"<<endl;
-	else{
+	if(!(br->good())){
 		usage(argv[0], "I could not read your file :/");
 		return 1; 
 	}
-	//Done opening file 
-
-	//Go through text line by line, put each line into fullText  
-	// while(getline(*br, text)){
-	// 	fullText += text;
-	// 	fullText.push_back('\n');
-	// 	//cout << fullText << endl;
-	// }
-
-	//while(file.good()){
-	//{
-	//	char ch = file.get();
-	//}
-	//cout << fullText << endl;
 
 	cout << "There were " << argc << " arguments on the command line" << endl;
 
@@ -72,6 +56,16 @@ int main(int argc, char *argv[]) { //Takes in command line args
 	bool punctCalled = false;
 	bool numberCalled = false;
 	bool spaceCalled = false;
+	//Upper modifier
+	bool upperLetterCalled = false;
+	bool upperVowelCalled = false;
+	bool upperConsonantCalled = false;
+	bool upperWordCalled = false;
+	//Lower modifier 
+	bool lowerLetterCalled = false;
+	bool lowerVowelCalled = false;
+	bool lowerConsonantCalled = false;
+	bool lowerWordCalled = false;
 
 	//check if all arguments are filters 
 	for (int it=2; it<argc; it++){
@@ -87,9 +81,46 @@ int main(int argc, char *argv[]) { //Takes in command line args
 		}
 		else if (arg=="upper"){
 			upperCalled = true;
+			string nextArg = arg[it+1]
+			if (nextArg == "letter"){
+				upperLetterCalled = true;
+			}
+			else if (nextArg == "consonant"){
+				upperConsonantCalled = true;
+			}
+			else if (nextArg == "vowel"){
+				upperVowelCalled = true;
+			}
+			else if (nextArg == "word"){
+				upperWordCalled = true;
+			}
+			else {
+				usage(argv[0], "Upper cannot modify this filter.");
+				return 1; 
+			}
+			it++;
+
 		}
 		else if (arg=="lower"){
 			lowerCalled = true;
+			string nextArg = arg[it+1]
+			if (nextArg == "letter"){
+				lowerLetterCalled = true;
+			}
+			else if (nextArg == "consonant"){
+				lowerConsonantCalled = true;
+			}
+			else if (nextArg == "vowel"){
+				lowerVowelCalled = true;
+			}
+			else if (nextArg == "word"){
+				lowerWordCalled = true;
+			}
+			else{
+				usage(argv[0], "Lower cannot modify this filter.");
+				return 1; 
+			}
+			it++;
 		}
 		else if (arg=="word"){ //what do????? 
 			wordCalled = true;
