@@ -81,7 +81,7 @@ int main(int argc, char *argv[]) { //Takes in command line args
 		}
 		else if (arg=="upper"){
 			upperCalled = true;
-			string nextArg = arg[it+1]
+			string nextArg = argv[it+1];
 			if (nextArg == "letter"){
 				upperLetterCalled = true;
 			}
@@ -103,7 +103,7 @@ int main(int argc, char *argv[]) { //Takes in command line args
 		}
 		else if (arg=="lower"){
 			lowerCalled = true;
-			string nextArg = arg[it+1]
+			string nextArg = argv[it+1];
 			if (nextArg == "letter"){
 				lowerLetterCalled = true;
 			}
@@ -170,8 +170,9 @@ int main(int argc, char *argv[]) { //Takes in command line args
 			cout << ch << endl;
 			continue;
 		}
-		else if(spaceCalled && isdigit(ch)){ //what do???? 
+		else if(spaceCalled && isspace(ch)){ 
 			cout << ch << endl;
+			continue;
 		}
 		else if(punctCalled && ispunct(ch)){
 			cout << ch << endl;
