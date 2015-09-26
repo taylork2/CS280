@@ -2,30 +2,28 @@
 // Name        : filt.cpp
 // Description : filters out certain things from input file
 // Student name: Taylor Tu 
-// Class: CS 280 
+// Class	   : CS 280 
 //============================================================================
 
 #include <cctype> //isupper(ch) and islower(ch)
 #include <fstream> //to read file 
 #include <iostream> //input output 
 #include <string> //string shortcut instead of char array 
-#include <vector> //vector short cut (list)
 using namespace std;
 
 //Usage function: Tell user what's wrong 
 void  usage(char *progname, string msg) {
 	cerr << "Error: " << msg << endl;
-	cerr << "Usage is: " << progname << " [filename] [arg1] [arg2] [etc.]" <<endl;
+	cerr << "Usage is: " << progname << " [filename] [filter1] [filter2] [etc.]" <<endl;
 }
 
 int main(int argc, char *argv[]) { //Takes in command line args 
 	istream *br; 
-	string text;
-	string fullText;
+	string fullText; 
 	ifstream infile;
 
 	//Opening file 
-	if(argc >= 3) { //must have at least 3 arguments
+	if(argc >= 3) { //must have at least 3 arguments 
 		infile.open(argv[1]);
 		if(infile.is_open()){
 			br = &infile;
@@ -45,13 +43,10 @@ int main(int argc, char *argv[]) { //Takes in command line args
 		return 1; 
 	}
 
-	cout << "There were " << argc << " arguments on the command line" << endl;
-
+	//Possible filters 
 	bool letterCalled = false;
 	bool vowelCalled = false;
 	bool consonantCalled = false;
-	bool upperCalled = false;
-	bool lowerCalled = false;
 	bool wordCalled = false; 
 	bool punctCalled = false;
 	bool numberCalled = false;
@@ -67,7 +62,7 @@ int main(int argc, char *argv[]) { //Takes in command line args
 	bool lowerConsonantCalled = false;
 	bool lowerWordCalled = false;
 
-	//check if all arguments are filters 
+	//boolean will be true if filter called  
 	for (int it=2; it<argc; it++){
 		string arg = argv[it];
 		if (arg=="letter"){
@@ -80,55 +75,65 @@ int main(int argc, char *argv[]) { //Takes in command line args
 			consonantCalled = true;
 		}
 		else if (arg=="upper"){
-			upperCalled = true;
-			string nextArg = argv[it+1];
-			if (nextArg == "letter"){
-				upperLetterCalled = true;
-			}
-			else if (nextArg == "consonant"){
-				upperConsonantCalled = true;
-			}
-			else if (nextArg == "vowel"){
-				upperVowelCalled = true;
-			}
-			else if (nextArg == "word"){
-				upperWordCalled = true;
+			if (it+1 >= argc){ //prevent calling out of bounds
+				usage(argv[0], "Upper must modify a filter.");
+					return 1; 
 			}
 			else {
-				usage(argv[0], "Upper cannot modify this filter.");
-				return 1; 
+				string nextArg = argv[it+1];
+				if (nextArg == "letter"){
+					upperLetterCalled = true;
+				}
+				else if (nextArg == "consonant"){
+					upperConsonantCalled = true;
+				}
+				else if (nextArg == "vowel"){
+					upperVowelCalled = true;
+				}
+				else if (nextArg == "word"){
+					upperWordCalled = true;
+				}
+				else {
+					usage(argv[0], "Upper cannot modify this filter.");
+					return 1; 
+				}
+				it++;
 			}
-			it++;
 
 		}
 		else if (arg=="lower"){
-			lowerCalled = true;
-			string nextArg = argv[it+1];
-			if (nextArg == "letter"){
-				lowerLetterCalled = true;
+			if (it+1 >= argc){ //prevent calling out of bounds
+				usage(argv[0], "Upper must modify a filter.");
+					return 1; 
 			}
-			else if (nextArg == "consonant"){
-				lowerConsonantCalled = true;
+			else {
+				string nextArg = argv[it+1];  
+				if (nextArg == "letter"){
+					lowerLetterCalled = true;
+				}
+				else if (nextArg == "consonant"){
+					lowerConsonantCalled = true;
+				}
+				else if (nextArg == "vowel"){
+					lowerVowelCalled = true;
+				}
+				else if (nextArg == "word"){
+					lowerWordCalled = true;
+				}
+				else{
+					usage(argv[0], "Lower cannot modify this filter.");
+					return 1; 
+				}
+				it++;
 			}
-			else if (nextArg == "vowel"){
-				lowerVowelCalled = true;
-			}
-			else if (nextArg == "word"){
-				lowerWordCalled = true;
-			}
-			else{
-				usage(argv[0], "Lower cannot modify this filter.");
-				return 1; 
-			}
-			it++;
 		}
-		else if (arg=="word"){ //what do????? 
+		else if (arg=="word"){
 			wordCalled = true;
 		}
 		else if (arg=="number"){
 			numberCalled = true;
 		}
-		else if (arg=="space"){ //what do?????
+		else if (arg=="space"){
 			spaceCalled = true;
 		}
 		else if (arg=="punct"){
@@ -140,48 +145,97 @@ int main(int argc, char *argv[]) { //Takes in command line args
 		}
 	}
 
+	bool lowerLet = true; //true if entire word is lower letters
+	bool upperLet = true; //true if entire word is upper letters
+
+	string word = "";
 	string vowels = "aeiouAEIOU";
-	while(infile.good()) {
+
+	//pulls in character at a time, cout ch if not filtered out
+	while(!infile.eof()) {
 		char ch = infile.get();
-		if (isalpha(ch) && letterCalled){ 
-			cout << ch << endl;
+		if (letterCalled && isalpha(ch)){ 
+			continue;
+		}
+		else if (upperLetterCalled && isupper(ch)){ 
+			continue;
+		}
+		else if (lowerLetterCalled && islower(ch)){ 
 			continue;
 		}
 		else if (vowelCalled && vowels.find(ch) < vowels.length()){
-			cout << ch << endl;
 			continue;
 		}
-		else if(consonantCalled && isalpha(ch) && vowels.find(ch) >= vowels.length()){
-			cout << ch << endl;
+		else if (lowerVowelCalled && islower(ch) && vowels.find(ch) < vowels.length()){
 			continue;
 		}
-		else if(upperCalled && isupper(ch)){
-			cout << ch << endl;
+		else if (upperVowelCalled && isupper(ch) && vowels.find(ch) < vowels.length()){
 			continue;
 		}
-		else if(lowerCalled && islower(ch)){
-			cout << ch << endl;
+		else if(consonantCalled && vowels.find(ch) >= vowels.length()){
 			continue;
 		}
-		else if(wordCalled){ //what do????? 
-			cout << ch << endl;
+		else if(upperConsonantCalled && isupper(ch) && vowels.find(ch) >= vowels.length()){
+			continue;
+		}
+		else if(lowerConsonantCalled && islower(ch) && vowels.find(ch) >= vowels.length()){
+			continue;
+		}
+		else if(wordCalled && (isalpha(ch) || isdigit(ch))) {
+			continue;
+		}
+		else if(upperWordCalled) {
+			word += ch; 
+			if ((ispunct(ch) || isspace(ch)) && upperLet){
+				word = "";
+				cout << ch;
+			}
+			else if ((ispunct(ch) || isspace(ch)) && !upperLet){
+				upperLet = true;
+				cout << word; 
+				word = "";
+			}
+			else if (!isupper(ch)){
+				upperLet = false;
+			}
+
+		}
+		else if(lowerWordCalled) { 
+			word += ch; 
+			if ((ispunct(ch) || isspace(ch)) && lowerLet){
+				word = "";
+				cout << ch;
+			}
+			else if ((ispunct(ch) || isspace(ch)) && !lowerLet){
+				lowerLet = true;
+				cout << word; 
+				word = "";
+			}
+			else if (!islower(ch)){
+				lowerLet = false;
+			}
+
 		}
 		else if(numberCalled && isdigit(ch)){
-			cout << ch << endl;
 			continue;
 		}
 		else if(spaceCalled && isspace(ch)){ 
-			cout << ch << endl;
 			continue;
 		}
 		else if(punctCalled && ispunct(ch)){
-			cout << ch << endl;
 			continue;
 		}
 		else {
-			fullText += ch;
+			cout << ch;
 		}
 	}
-	cout << fullText;
+
+	if (upperWordCalled && upperLet) {
+		cout << word;
+	}
+	if (lowerWordCalled && lowerLet) {
+		cout << word;
+	}
+
 	return 0;
 }
