@@ -165,7 +165,41 @@ int main(int argc, char *argv[]) { //Takes in command line args
 	//pulls in character at a time, cout ch if not filtered out
 	char ch;
 	while(infile.get(ch)) {
-		if (upperAndLowerWord){
+		
+		if (letterCalled && isalpha(ch)){ 
+			continue;
+		}
+		else if (upperLetterCalled && isupper(ch)){ 
+			continue;
+		}
+		else if (lowerLetterCalled && islower(ch)){ 
+			continue;
+		}
+		else if (vowelCalled && vowels.find(ch) < vowels.length()){
+			continue;
+		}
+		else if (lowerVowelCalled && islower(ch) && vowels.find(ch) < vowels.length()){
+			continue;
+		}
+		else if (upperVowelCalled && isupper(ch) && vowels.find(ch) < vowels.length()){
+			continue;
+		}
+		else if(consonantCalled && vowels.find(ch) >= vowels.length()){
+			continue;
+		}
+		else if(upperConsonantCalled && isupper(ch) && vowels.find(ch) >= vowels.length()){
+			continue;
+		}
+		else if(lowerConsonantCalled && islower(ch) && vowels.find(ch) >= vowels.length()){
+			continue;
+		}
+		else if(wordCalled && (isalpha(ch) || isdigit(ch))) {
+			continue;
+		}
+		else if(punctCalled && ispunct(ch)){
+			continue;
+		}
+		else if (upperAndLowerWord){
 			if ((ispunct(ch) || isspace(ch)) && upperLet && containsUpper){
 				lowerLet = true;
 				containsUpper = false;
@@ -208,7 +242,6 @@ int main(int argc, char *argv[]) { //Takes in command line args
 			}
 		}
 		else if(upperWordCalled) {
-			
 			if ((ispunct(ch) || isspace(ch)) && upperLet && containsUpper){
 				containsUpper = false;
 				word = "";
@@ -266,47 +299,13 @@ int main(int argc, char *argv[]) { //Takes in command line args
 				word += ch; 
 			}
 		}
-		if (letterCalled && isalpha(ch)){ 
-			continue;
-		}
-		else if (upperLetterCalled && isupper(ch)){ 
-			continue;
-		}
-		else if (lowerLetterCalled && islower(ch)){ 
-			continue;
-		}
-		else if (vowelCalled && vowels.find(ch) < vowels.length()){
-			continue;
-		}
-		else if (lowerVowelCalled && islower(ch) && vowels.find(ch) < vowels.length()){
-			continue;
-		}
-		else if (upperVowelCalled && isupper(ch) && vowels.find(ch) < vowels.length()){
-			continue;
-		}
-		else if(consonantCalled && vowels.find(ch) >= vowels.length()){
-			continue;
-		}
-		else if(upperConsonantCalled && isupper(ch) && vowels.find(ch) >= vowels.length()){
-			continue;
-		}
-		else if(lowerConsonantCalled && islower(ch) && vowels.find(ch) >= vowels.length()){
-			continue;
-		}
-		else if(wordCalled && (isalpha(ch) || isdigit(ch))) {
-			continue;
-		}
-		
-		else if(numberCalled && isdigit(ch)){
-			continue;
-		}
 		else if(spaceCalled && isspace(ch)){ 
 			continue;
 		}
-		else if(punctCalled && ispunct(ch)){
+		else if(numberCalled && isdigit(ch)){
 			continue;
 		}
-		else if (!upperWordCalled && !lowerWordCalled) {
+		else {
 			cout << ch;
 		}
 
