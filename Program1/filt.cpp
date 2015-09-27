@@ -63,7 +63,9 @@ int main(int argc, char *argv[]) { //Takes in command line args
 	bool lowerWordCalled = false;
 	bool upperAndLowerWord = false;
 
+	//======================================================
 	//boolean will be true if filter called  
+	//======================================================
 	for (int it=2; it<argc; it++){
 		string arg = argv[it];
 		if (arg=="letter"){
@@ -150,6 +152,8 @@ int main(int argc, char *argv[]) { //Takes in command line args
 		upperAndLowerWord = true; 
 	}
 
+	//======================================================
+
 	bool lowerLet = true; //true if entire word is lower letters or numbers
 	bool containsLower = false; //true if word contains lower letter 
 	bool upperLet = true; //true if entire word is upper letters or numbers
@@ -161,6 +165,107 @@ int main(int argc, char *argv[]) { //Takes in command line args
 	//pulls in character at a time, cout ch if not filtered out
 	char ch;
 	while(infile.get(ch)) {
+		if (upperAndLowerWord){
+			if ((ispunct(ch) || isspace(ch)) && upperLet && containsUpper){
+				lowerLet = true;
+				containsUpper = false;
+				word = "";
+				if ((!punctCalled && ispunct(ch)) || (!spaceCalled && isspace(ch))){
+					cout << ch;	
+				}
+			}
+			else if ((ispunct(ch) || isspace(ch)) && lowerLet && containsLower){
+				upperLet = true;
+				containsLower=false;
+				word = "";
+				if ((!punctCalled && ispunct(ch)) || (!spaceCalled && isspace(ch))){
+					cout << ch;	
+				}
+			}
+			else if (ispunct(ch) || isspace(ch)){
+				containsUpper = false;
+				upperLet = true;
+				containsLower = false;
+				lowerLet = true;
+				cout << word; 
+				if ((!punctCalled && ispunct(ch)) || (!spaceCalled && isspace(ch))){
+					cout << ch;	
+				}
+				word = "";
+			}
+			else if (!isupper(ch) && !isdigit(ch)){
+				word += ch;
+				upperLet = false;
+				containsLower = true;
+			}
+			else if (isupper(ch)){
+				word += ch;
+				containsUpper = true;
+				lowerLet = false;
+			}
+			else{
+				word += ch;
+			}
+		}
+		else if(upperWordCalled) {
+			
+			if ((ispunct(ch) || isspace(ch)) && upperLet && containsUpper){
+				containsUpper = false;
+				word = "";
+				if ((!punctCalled && ispunct(ch)) || (!spaceCalled && isspace(ch))){
+					cout << ch;	
+				}
+			}
+			else if (ispunct(ch) || isspace(ch)){
+				containsUpper = false;
+				upperLet = true;
+				cout << word; 
+				if ((!punctCalled && ispunct(ch)) || (!spaceCalled && isspace(ch))){
+					cout << ch;	
+				}
+				word = "";
+			}
+			else if (!isupper(ch) && !isdigit(ch)){
+				word += ch; 
+				upperLet = false;
+			}
+			else if (isupper(ch)){
+				word += ch; 
+				containsUpper = true;
+			}
+			else {
+				word += ch; 
+			}
+		}
+		else if (lowerWordCalled) {  
+			if ((ispunct(ch) || isspace(ch)) && lowerLet && containsLower){
+				containsLower=false;
+				word = "";
+				if ((!punctCalled && ispunct(ch)) || (!spaceCalled && isspace(ch))){
+					cout << ch;	
+				}
+			}
+			else if (ispunct(ch) || isspace(ch)){
+				containsLower = false;
+				lowerLet = true;
+				cout << word; 
+				if ((!punctCalled && ispunct(ch)) || (!spaceCalled && isspace(ch))){
+					cout << ch;	
+				}
+				word = "";
+			}
+			else if (!islower(ch) && !isdigit(ch)){
+				word += ch; 
+				lowerLet = false;
+			}
+			else if (islower(ch)){
+				word += ch; 
+				containsLower = true;
+			}
+			else {
+				word += ch; 
+			}
+		}
 		if (letterCalled && isalpha(ch)){ 
 			continue;
 		}
@@ -204,81 +309,16 @@ int main(int argc, char *argv[]) { //Takes in command line args
 		else if (!upperWordCalled && !lowerWordCalled) {
 			cout << ch;
 		}
-		if (upperAndLowerWord){
-			word += ch;
-			if ((ispunct(ch) || isspace(ch)) && upperLet && containsUpper){
-				containsUpper = false;
-				word = "";
-				cout << ch;
-			}
-			else if ((ispunct(ch) || isspace(ch)) && lowerLet && containsLower){
-				containsLower=false;
-				word = "";
-				cout << ch;
-			}
-			else if (ispunct(ch) || isspace(ch)){
-				containsUpper = false;
-				upperLet = true;
-				containsLower = false;
-				lowerLet = true;
-				cout << word; 
-				word = "";
-			}
-			else if (!isupper(ch) && !isdigit(ch)){
-				upperLet = false;
-				containsLower = true;
-			}
-			else if (isupper(ch)){
-				containsUpper = true;
-				lowerLet = false;
-			}
-		}
-		else if(upperWordCalled) {
-			word += ch; 
-			if ((ispunct(ch) || isspace(ch)) && upperLet && containsUpper){
-				containsUpper = false;
-				word = "";
-				cout << ch;
-			}
-			else if (ispunct(ch) || isspace(ch)){
-				containsUpper = false;
-				upperLet = true;
-				cout << word; 
-				word = "";
-			}
-			else if (!isupper(ch) && !isdigit(ch)){
-				upperLet = false;
-			}
-			else if (isupper(ch)){
-				containsUpper = true;
-			}
-		}
-		else if (lowerWordCalled) { 
-			word += ch; 
-			if ((ispunct(ch) || isspace(ch)) && lowerLet && containsLower){
-				containsLower=false;
-				word = "";
-				cout << ch;
-			}
-			else if (ispunct(ch) || isspace(ch)){
-				containsLower = false;
-				lowerLet = true;
-				cout << word; 
-				word = "";
-			}
-			else if (!islower(ch) && !isdigit(ch)){
-				lowerLet = false;
-			}
-			else if (islower(ch)){
-				containsLower = true;
-			}
-		}
-	}
 
-	if (upperWordCalled && upperLet && containsUpper) {
+	}
+	if (upperAndLowerWord && !upperLet && !lowerLet){
+		cout << word;
+
+	}
+	else if (upperWordCalled && !upperLet) {
 		cout << word;
 	}
-	if (lowerWordCalled && lowerLet && containsLower) {
+	else if (lowerWordCalled && !lowerLet) {
 		cout << word;
 	}
 
