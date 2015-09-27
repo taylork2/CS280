@@ -154,8 +154,8 @@ int main(int argc, char *argv[]) { //Takes in command line args
 	string vowels = "aeiouAEIOU";
 
 	//pulls in character at a time, cout ch if not filtered out
-	while(!infile.eof()) {
-		char ch = infile.get();
+	char ch;
+	while(infile.get(ch)) {
 		if (letterCalled && isalpha(ch)){ 
 			continue;
 		}
