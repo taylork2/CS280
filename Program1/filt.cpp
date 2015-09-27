@@ -191,7 +191,20 @@ int main(int argc, char *argv[]) { //Takes in command line args
 		else if(wordCalled && (isalpha(ch) || isdigit(ch))) {
 			continue;
 		}
-		else if (upperAndLowerWord){
+		
+		else if(numberCalled && isdigit(ch)){
+			continue;
+		}
+		else if(spaceCalled && isspace(ch)){ 
+			continue;
+		}
+		else if(punctCalled && ispunct(ch)){
+			continue;
+		}
+		else if (!upperWordCalled && !lowerWordCalled) {
+			cout << ch;
+		}
+		if (upperAndLowerWord){
 			word += ch;
 			if ((ispunct(ch) || isspace(ch)) && upperLet && containsUpper){
 				containsUpper = false;
@@ -219,7 +232,6 @@ int main(int argc, char *argv[]) { //Takes in command line args
 				containsUpper = true;
 				lowerLet = false;
 			}
-
 		}
 		else if(upperWordCalled) {
 			word += ch; 
@@ -240,9 +252,8 @@ int main(int argc, char *argv[]) { //Takes in command line args
 			else if (isupper(ch)){
 				containsUpper = true;
 			}
-
 		}
-		else if(lowerWordCalled) { 
+		else if (lowerWordCalled) { 
 			word += ch; 
 			if ((ispunct(ch) || isspace(ch)) && lowerLet && containsLower){
 				containsLower=false;
@@ -261,19 +272,6 @@ int main(int argc, char *argv[]) { //Takes in command line args
 			else if (islower(ch)){
 				containsLower = true;
 			}
-
-		}
-		else if(numberCalled && isdigit(ch)){
-			continue;
-		}
-		else if(spaceCalled && isspace(ch)){ 
-			continue;
-		}
-		else if(punctCalled && ispunct(ch)){
-			continue;
-		}
-		else {
-			cout << ch;
 		}
 	}
 
