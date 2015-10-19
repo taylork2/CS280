@@ -1,3 +1,10 @@
+//============================================================================
+// Name        : main.cpp
+// Description : Outputs number of top 3 most-used tokens
+// Student name: Taylor Tu 
+// Class	   : CS 280 
+//============================================================================
+
 #include "p2lex.h"
 #include "token.cpp"
 #include <string>
@@ -6,6 +13,7 @@
 #include <stdio.h>
 #include <vector>
 #include <map>
+#include <algorithm>
 
 using namespace std;
 
@@ -46,12 +54,13 @@ int main(int argc, char *argv[]){
 	Token token;
 	string lex;
 	vector<string> identifiers;
+
 	while (true){
 		token = getToken(br, lex);
 		counters[token]++;
 
 		if (token == ID){
-			if (identifiers.count(lex)){
+			if (identifiers.empty() || find(identifiers.begin(), identifiers.end(), lex) == identifiers.end()){
 				identifiers.push_back(lex);	
 			}
 		} else if (token == DONE){
@@ -60,9 +69,14 @@ int main(int argc, char *argv[]){
 			cout << "Error on line " << linenum;
 			return 1;
 		}
-	}
-	
-	
-	return 0;
+	}	
 
+	if (identifiers.size() != 0){
+		cout << "List of identifiers: ";
+		for (int x = 0; x < identifiers.size(); x++){
+			cout << identifiers[x] << ", ";
+		}
+	}
+	 
+	return 0;
 }
