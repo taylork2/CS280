@@ -35,9 +35,7 @@ Token getToken(istream *br, string& lexeme){
 			char ch2;
 			while (br->get(ch2)){
 				if (!isalpha(ch2)){
-					if (ch2 == '\n'){
-						linenum++;
-					}
+					br->unget();
 					break;
 				} else{
 					lex += ch2;

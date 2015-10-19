@@ -53,16 +53,14 @@ int main(int argc, char *argv[]){
 
 	Token token;
 	string lex;
-	vector<string> identifiers;
+	map<string, int > identifiers;
 	//Calling getToken()
 	while (true){
 		token = getToken(br, lex);
 		counters[token]++;
 
 		if (token == ID){
-			if (identifiers.empty() || find(identifiers.begin(), identifiers.end(), lex) == identifiers.end()){
-				identifiers.push_back(lex);	
-			}
+			identifiers[lex]++;
 		} else if (token == DONE){
 			break;
 		} else if (token == ERR){
@@ -121,13 +119,17 @@ int main(int argc, char *argv[]){
 	//output identifiers if there are any
 	cout << endl; 
 	if (identifiers.size() != 0){
+		int index=0;
 		cout << "List of identifiers: ";
-		for (int x = 0; x < identifiers.size(); x++){
-			if (x==identifiers.size()-1){
-				cout << identifiers[x];
+		map<string, int>::iterator it3;
+		for (it3 = identifiers.begin(); it3 != identifiers.end(); it3++){
+			index++;
+			if (index == identifiers.size()){
+				cout << it3-> first;
 			} else {
-				cout << identifiers[x] << ", ";
+				cout << it3-> first << ", ";
 			}
+
 		}
 	}
 	 
