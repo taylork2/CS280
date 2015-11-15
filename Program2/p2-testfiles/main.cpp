@@ -66,7 +66,7 @@ int main(int argc, char *argv[]){
 		} else if (token == DONE){
 			break;
 		} else if (token == ERR){
-			cout << "Error on line " << linenum;
+			cout << "Error on line " << linenum <<endl;
 			return 1;
 		}
 	}
@@ -101,9 +101,9 @@ int main(int argc, char *argv[]){
 			} else if (token == FOR){
 				cout << "FOR keyword: ";
 			} else if (token == LPAREN){
-				cout << "Left Parentheses: ";
+				cout << "Left paren: ";
 			} else if (token == RPAREN){
-				cout << "Right Parentheses: ";
+				cout << "Right paren: ";
 			} else if (token == SC){
 				cout << "Semicolon: ";
 			}
@@ -119,12 +119,22 @@ int main(int argc, char *argv[]){
 	}
 
 	//output identifiers if there are any
-	cout << endl; 
 	if (identifiers.size() != 0){
+<<<<<<< Updated upstream
 		cout << "List of identifiers: ";
 		for (int x = 0; x < identifiers.size(); x++){
 			if (x==identifiers.size()-1){
 				cout << identifiers[x];
+=======
+		cout << endl; 
+		int index=0;
+		cout << "List of identifiers: ";
+		map<string, int>::iterator it3;
+		for (it3 = identifiers.begin(); it3 != identifiers.end(); it3++){
+			index++;
+			if (index == identifiers.size()){
+				cout << it3-> first << endl;
+>>>>>>> Stashed changes
 			} else {
 				cout << identifiers[x] << ", ";
 			}

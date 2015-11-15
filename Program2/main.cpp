@@ -66,15 +66,80 @@ int main(int argc, char *argv[]){
 		} else if (token == DONE){
 			break;
 		} else if (token == ERR){
-			cout << "Error on line " << linenum;
+			cout << "Error on line " << linenum <<endl;
 			return 1;
 		}
+<<<<<<< Updated upstream
 	}	
 
 	if (identifiers.size() != 0){
 		cout << "List of identifiers: ";
 		for (int x = 0; x < identifiers.size(); x++){
 			cout << identifiers[x] << ", ";
+=======
+	}
+
+	//iterate through counters, append Tokens to list at int of Tokens key 
+	map<Token, int>::iterator it;
+	for(it=counters.begin(); it != counters.end(); it++){
+		bycount[it->second].push_back(it->first);		
+	}
+
+	//iterate backward through bycount, output top 3 Tokens
+	map< int, vector<Token> >::reverse_iterator it2;
+	int limit=0;
+	for (it2=bycount.rbegin(); it2 != bycount.rend(); it2++){
+		limit ++; 
+		for (int x=0; x< it2-> second.size(); x++){
+			Token token = it2->second[x];
+			if (token == ID){
+				cout << "Identifier: ";
+			} else if (token == STRING){
+				cout << "String constant: ";
+			} else if (token == UNION){
+				cout << "Union operator: ";
+			} else if (token == INTERSECT){
+				cout << "Intersect operator: ";
+			} else if (token == SET){
+				cout << "SET keyword: ";
+			} else if (token == PRINT){
+				cout << "PRINT keyword: ";
+			} else if (token == SEARCH){
+				cout << "SEARCH keyword: ";
+			} else if (token == FOR){
+				cout << "FOR keyword: ";
+			} else if (token == LPAREN){
+				cout << "Left paren: ";
+			} else if (token == RPAREN){
+				cout << "Right paren: ";
+			} else if (token == SC){
+				cout << "Semicolon: ";
+			}
+
+			if (token != DONE){
+				cout << it2->first <<endl;	
+			}			
+		}
+		//Print only top 3 
+		if (limit > 2){
+			break;
+		}
+	}
+
+	//output identifiers if there are any
+	if (identifiers.size() != 0){
+		cout << endl; 
+		int index=0;
+		cout << "List of identifiers: ";
+		map<string, int>::iterator it3;
+		for (it3 = identifiers.begin(); it3 != identifiers.end(); it3++){
+			index++;
+			if (index == identifiers.size()){
+				cout << it3-> first << endl;
+			} else {
+				cout << it3-> first << ", ";
+			}
+>>>>>>> Stashed changes
 		}
 	}
 	 
