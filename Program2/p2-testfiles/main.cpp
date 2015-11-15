@@ -121,11 +121,17 @@ int main(int argc, char *argv[]){
 	//output identifiers if there are any
 	if (identifiers.size() != 0){
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		cout << "List of identifiers: ";
 		for (int x = 0; x < identifiers.size(); x++){
 			if (x==identifiers.size()-1){
 				cout << identifiers[x];
 =======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 		cout << endl; 
 		int index=0;
 		cout << "List of identifiers: ";
@@ -134,6 +140,12 @@ int main(int argc, char *argv[]){
 			index++;
 			if (index == identifiers.size()){
 				cout << it3-> first << endl;
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 			} else {
 				cout << identifiers[x] << ", ";

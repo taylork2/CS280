@@ -139,6 +139,12 @@ int main(int argc, char *argv[]){
 			} else {
 				cout << it3-> first << ", ";
 			}
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 		}
 	}
