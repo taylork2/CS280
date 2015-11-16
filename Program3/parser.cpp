@@ -6,8 +6,18 @@
 //============================================================================
 
 #include "p2lex.h"
+#include <string>
+#include <iostream>
+#include <fstream>
+#include <stdio.h>
 
 using namespace std;
+
+int errorCount=0;
+
+void usage(char *progname, string msg){
+	cerr << "Error: " << msg << endl;
+}
 
 class PTree{
 protected:
@@ -30,7 +40,7 @@ public:
 	virtual void findEmptyStrings() {}
 	virtual void  findInvalidOps() {}
 
-	enum Type {T_STRING, T_SEARCHRESULT, T_NONE };
+	enum Type {T_STRING, T_SEARCHRESULT, T_NONE};
 
 	virtual Type getType() {return T_NONE;}
 };
@@ -55,18 +65,25 @@ PTree *StmtList(istream *br) {
 	return 0; 
 }
 
+//Stmt ::= PRINT Expr SC | SET ID Expr SC
 PTree *Stmt(istream *br) {
 	if getToken(br)	== PRINT{
 		PTree *expr;
 		expr = Expr(br);
 		if (expr){
 			if getToken(br) == SC{
-				return new PTreeStmtList(linenum stmt, Stmt(br));
+				return new PTreeStmtList(linenum expr, Stmt(br));
 			}
-			return 0;
+			else{
+				usage(argv[0], "Expecting semi-colon");
+				errorCount++;	
+				return 1;}
 		}
-		//ERROR 
-		return 0;
+		else {
+			usage(argv[0], "Expecting expression");
+			errorCount++;
+			return 1;
+		}
 	}
 	else if getToken(br) == SET{
 		if getToken(br) == ID{
@@ -76,17 +93,26 @@ PTree *Stmt(istream *br) {
 				if getToken(br) == SC{
 					return new PTreeStmtList(linenum stmt, Stmt(br));
 				}
-				return 0;
+				else {
+					usage(argv[0], "Expecting semi-colon");
+					errorCount++;
+					return 1;
+				}
+			} else {
+				usage(argv[0], "Expecting expression");
+				errorCount++;
+				return 1;
 			}
-			return 0;
+		} else {
+			usage(argv[0], "Expecting ID");
+			errorCount++;
+			return 1;
 		}
-		return 0;
 	}
-	else {
-		return 0;
-	}
+	return 0;	
 }
 
+//Expr ::= Term UNION Expr | Term
 PTree *Expr(istream *br){
 	PTree *term;
 	term = Term(br);
@@ -100,14 +126,30 @@ PTree *Expr(istream *br){
 				if (expr){
 					return new PTreeStmtList(linenum stmt, Expr(br));
 				}
-				return 0;
+				return 1;
 			}
-			return 0;
+			return 1;
 		}
 		else{
 			return new PTreeStmtList(linenum stmt, Expr(br));
 		}
 	}
+	return 0;
+}
+
+//Term ::= Primary INTERSECT Term | Primary
+PTree *Term(istream *br){
+	return 0;
+}
+
+
+//Primary ::= Search_expr | ID | STRING | LPAREN Expr RPAREN
+PTree *Primary(istream *br){
+	return 0;
+}
+
+//Search_expr ::= SEARCH STRING FOR STRING
+PTree *Search_expr(istream *br){
 	return 0;
 }
 

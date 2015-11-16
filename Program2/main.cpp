@@ -6,7 +6,6 @@
 //============================================================================
 
 #include "p2lex.h"
-#include "token.cpp"
 #include <string>
 #include <iostream>
 #include <fstream>
@@ -69,14 +68,13 @@ int main(int argc, char *argv[]){
 			cout << "Error on line " << linenum <<endl;
 			return 1;
 		}
-<<<<<<< Updated upstream
 	}	
 
 	if (identifiers.size() != 0){
 		cout << "List of identifiers: ";
 		for (int x = 0; x < identifiers.size(); x++){
 			cout << identifiers[x] << ", ";
-=======
+		}
 	}
 
 	//iterate through counters, append Tokens to list at int of Tokens key 
@@ -139,16 +137,6 @@ int main(int argc, char *argv[]){
 			} else {
 				cout << it3-> first << ", ";
 			}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 		}
 	}
 	 

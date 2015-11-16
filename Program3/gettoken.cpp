@@ -141,7 +141,7 @@ getToken(istream *br, string& lexeme)
 
 // the real functions and pushback
 
-bool        pushedBack = false;
+bool            pushedBack = false;
 static Token    pushedBackToken;
 static string   pushedBackLexeme;
 Token
