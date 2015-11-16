@@ -5,13 +5,15 @@
 // Class	   : CS 280 
 //============================================================================
 
-#include "p2.lex"
+#include "p2lex.h"
 #include <string>
 #include <iostream>
 #include <fstream>
 #include <stdio.h>
 
-
+void usage(char *progname, string msg){
+	cerr << "Error: " << msg << endl;
+}
 int main(int argc, char *argv[]){
 	istream *br; 
 	ifstream infile;
@@ -40,7 +42,9 @@ int main(int argc, char *argv[]){
 		return 1; 
 	}
 
-
+	PTreeStmtList *test = new PTreeStmtList(5);
+	int count;
+	count = test->nodeCount(test);
 
 }
 

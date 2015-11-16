@@ -1,13 +1,9 @@
-//
-//  gettoken.cpp
-//  p2lexer
-//
-//  Created by Gerard Ryan on 2/26/15.
-//  Copyright (c) 2015 Gerard Ryan. All rights reserved.
-//
+// p3lex
 
 #include "p2lex.h"
 #include <cctype>
+
+int linenum;
 
 enum LexState {
     START,
@@ -35,17 +31,17 @@ keywordCheck(const string& word)
     return ID;
 }
 
-Token
-getToken(istream *br, string& lexeme)
+static Token
+getActualToken(istream *br, string& lexeme)
 {
     LexState state = START;
     lexeme.clear();
     
     int inchar;
     
-    while ( (inchar = br->get()) != EOF && br->good() ) {
+    while ( (inchar = br->get()) && br->good() ) {
         if( inchar == '\n' )
-	    linenum++;
+        linenum++;
 
         switch (state) {
             case START:
@@ -124,7 +120,7 @@ getToken(istream *br, string& lexeme)
                 
             default:
                 cerr << "This should never happen!" << endl;
-                exit(1);
+                return ERR;
                 break;
         }
     }
@@ -141,7 +137,7 @@ getToken(istream *br, string& lexeme)
 
 // the real functions and pushback
 
-bool            pushedBack = false;
+bool        pushedBack = false;
 static Token    pushedBackToken;
 static string   pushedBackLexeme;
 Token
