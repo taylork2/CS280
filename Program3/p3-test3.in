@@ -1,0 +1,7 @@
+print x;
+print y;
+print "";
+print "help!!!! Please!!!!";
+
+set x "this" ^ "won;t work";
+

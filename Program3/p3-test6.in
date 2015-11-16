@@ -1,0 +1,9 @@
+set testing search "input.txt" for "donuts";
+
+set hasboth "coffee" ^ testing;
+
+set haseither "coffee" + testing;
+
+print "search; print testing;
+print "both"; print hasboth;
+print "either"; print haseither;

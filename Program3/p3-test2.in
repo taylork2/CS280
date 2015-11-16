@@ -1,0 +1,14 @@
+// expression stuff
+
+set x search "fridge" for "donuts";
+
+set y x + "beer";
+set z "coffee" + x;
+
+set aaa y ^ "donuts";
+
+set xxx aaa ^ "cookies" + "fish" ^ "bicycles";
+
+print x;
+
+print xxx;

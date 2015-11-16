@@ -138,3 +138,33 @@ getToken(istream *br, string& lexeme)
     }
     return DONE;
 }
+
+// the real functions and pushback
+
+bool        pushedBack = false;
+static Token    pushedBackToken;
+static string   pushedBackLexeme;
+Token
+getToken(istream *br, string& lexeme)
+{
+    if( pushedBack ) {
+        pushedBack = false;
+        lexeme = pushedBackLexeme;
+        return pushedBackToken;
+    }
+
+    return getActualToken(br, lexeme);
+}
+
+bool
+pushbackToken(Token t, string lexeme)
+{
+    if( !pushedBack ) {
+        pushedBack = true;
+        pushedBackToken = t;
+        pushedBackLexeme = lexeme;
+        return true;
+    }
+
+    return false;
+}

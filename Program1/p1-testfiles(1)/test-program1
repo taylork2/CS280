@@ -1,0 +1,108 @@
+#!/bin/ksh
+
+### CS280 Fall 2015
+### Programming Assignment 1
+### shell script for testing 
+
+### Prof Ryan
+
+usage() {
+	echo $*
+	echo "Usage:"
+	echo "./test-program1 {c++ source files}"
+	echo "./test-program1 -showtests prints out the tests"
+	echo "./test-program1 -cleanup deletes files created by the testing"
+	exit
+}
+
+runtests() {
+	live=1
+	if [[ "$1" = "-show" ]] ; then
+		set echo filt.cpp
+		live=0
+	else
+		set eval $*
+	fi
+	echo "Arg check test: These cases should generate an error messages and stop"
+	[[ $live = 1 ]] && set -x
+	$* 
+	$* nosuchfile letter 
+	$* p1-test1.in letter incorrectfilter
+	$* p1-test1.in letter lower
+	$* p1-test1.in upper lower letter 
+	[[ $live = 1 ]] && set +x
+
+	echo "Test cases: if your output does not match, the difference between yours and correct output are printed"
+	echo "The list of cases follows. If there is no output other than the case numbers and 'test done', everything passed"
+
+	echo 1:
+	$* "p1-test1.in letter > p1-test1.out 2>&1"
+	[[ $live = 1 ]] && diff p1-test1.out p1-test1.correct
+	echo 2:
+	$* "p1-test1.in letter number > p1-test2.out 2>&1"
+	[[ $live = 1 ]] && diff p1-test2.out p1-test2.correct
+	echo 3:
+	$* "p1-test1.in letter number punct > p1-test3.out 2>&1"
+	[[ $live = 1 ]] && diff p1-test3.out p1-test3.correct
+	echo 4:
+	$* "p1-test1.in letter number punct space > p1-test4.out 2>&1"
+	[[ $live = 1 ]] && diff p1-test4.out p1-test4.correct
+
+	echo 5:
+	$* "p1-test1.in word > p1-test5.out 2>&1"
+	[[ $live = 1 ]] && diff p1-test5.out p1-test5.correct
+	echo 6:
+	$* "p1-test1.in upper word > p1-test6.out 2>&1"
+	[[ $live = 1 ]] && diff p1-test6.out p1-test6.correct
+	echo 7:
+	$* "p1-test1.in lower word > p1-test7.out 2>&1"
+	[[ $live = 1 ]] && diff p1-test7.out p1-test7.correct
+	echo 8:
+	$* "p1-test1.in upper word lower word > p1-test8.out 2>&1"
+	[[ $live = 1 ]] && diff p1-test8.out p1-test8.correct
+	echo 9:
+	$* "p1-test1.in upper word lower word number space > p1-test9.out 2>&1"
+	[[ $live = 1 ]] && diff p1-test9.out p1-test9.correct
+
+	echo 10:
+	$* "p1-test1.in upper vowel lower consonant > p1-test10.out 2>&1"
+	[[ $live = 1 ]] && diff p1-test10.out p1-test10.correct
+
+	[[ $live = 1 ]] && echo "test done"
+}
+
+
+cfiles=
+
+if [[ $# -eq 1 && "$1" = "-cleanup" ]] ; then
+	rm -f *.out
+	exit 0
+fi
+
+if [[ $# -eq 1 && "$1" = "-showtests" ]] ; then
+	runtests -show
+	exit 0
+fi
+
+while [[ $# -gt 0 ]]
+do
+	val=$1
+	shift
+
+	cfiles="$cfiles $val"
+done
+
+if [[ "$cfiles" = "" ]] ; then
+	usage "no c++ files"
+fi
+
+echo "Compiling these c++ files: " $cfiles
+g++ -g --std=c++0x $cfiles
+if [[ $? -ne 0 ]] ; then
+	echo "c++ compile failed"
+	exit
+fi
+
+echo "********** Testing program 1 **********"
+runtests ./a.out
+

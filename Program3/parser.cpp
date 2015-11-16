@@ -56,5 +56,58 @@ PTree *StmtList(istream *br) {
 }
 
 PTree *Stmt(istream *br) {
-	PTree *
+	if getToken(br)	== PRINT{
+		PTree *expr;
+		expr = Expr(br);
+		if (expr){
+			if getToken(br) == SC{
+				return new PTreeStmtList(linenum stmt, Stmt(br));
+			}
+			return 0;
+		}
+		//ERROR 
+		return 0;
+	}
+	else if getToken(br) == SET{
+		if getToken(br) == ID{
+			PTree *expr;
+			expr = Expr(br);
+			if (expr){
+				if getToken(br) == SC{
+					return new PTreeStmtList(linenum stmt, Stmt(br));
+				}
+				return 0;
+			}
+			return 0;
+		}
+		return 0;
+	}
+	else {
+		return 0;
+	}
 }
+
+PTree *Expr(istream *br){
+	PTree *term;
+	term = Term(br);
+	if (term){
+		if 	getToken(br) == UNION{
+			PTree *term2;
+			term2 = Term(br);
+			if (term2){
+				PTree *expr;
+				expr = Expr(br);
+				if (expr){
+					return new PTreeStmtList(linenum stmt, Expr(br));
+				}
+				return 0;
+			}
+			return 0;
+		}
+		else{
+			return new PTreeStmtList(linenum stmt, Expr(br));
+		}
+	}
+	return 0;
+}
+

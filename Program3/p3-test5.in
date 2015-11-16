@@ -1,0 +1,13 @@
+// these are IDs; we don't know their types statically
+// therefore we cannot do the testing of the operators statically!!!
+print every^good^boy^does^fine;
+
+print "";
+print "and";
+print "";
+
+print "help" + search "foo" for "files";
+print "help" ^ search "foo" for "files";
+
+print "help" + "help";
+print "help" ^ "help";
