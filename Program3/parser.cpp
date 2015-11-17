@@ -110,10 +110,16 @@ PTree *Term(istream *br){
 		if (getToken(br)==INTERSECT){
 			PTree *term;
 			term = Term(br);
-			if (term){}
-			else{
-
+			if (term){
+				pTerm = new PTreeTerm(linenum, INTERSECT, 0);
+				pTerm -> left = primary;
+				pTerm -> right = term;
+				return pTerm;
 			}
+			else{
+				usage("Expecting Term");
+				errorCount++;	
+				return 0;}
 		}
 		else {return new PTreeTerm(linenum, primary,0);}
 	}
