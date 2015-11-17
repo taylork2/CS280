@@ -1,0 +1,2 @@
+      3 [sig] -bash 11416 get_proc_lock: Couldn't acquire sync_proc_subproc for(5,1), last 7, Win32 error 0
+  55601 [sig] -bash 11416 proc_subproc: couldn't get proc lock. what 5, val 1

@@ -1,15 +1,18 @@
 //============================================================================
-// Name        : parser.cpp
+// Name        : main.cpp
 // Description : lexical analysis project  
 // Student name: Taylor Tu 
 // Class	   : CS 280 
 //============================================================================
 
 #include "p2lex.h"
+#include "parser.cpp"
 #include <string>
 #include <iostream>
 #include <fstream>
 #include <stdio.h>
+
+using namespace std;
 
 void usage(char *progname, string msg){
 	cerr << "Error: " << msg << endl;
@@ -42,9 +45,11 @@ int main(int argc, char *argv[]){
 		return 1; 
 	}
 
-	PTreeStmtList *test = new PTreeStmtList(5);
-	int count;
-	count = test->nodeCount(test);
+	PTree *test;
+	test = Program(br);
+	cout << test->nodeCount() << endl;
 
+
+	return 0;
 }
 

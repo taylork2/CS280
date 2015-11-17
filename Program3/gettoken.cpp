@@ -2,8 +2,10 @@
 
 #include "p2lex.h"
 #include <cctype>
+#include <stdio.h>
+#include <cstdlib>
 
-int linenum;
+int linenum=0;
 
 enum LexState {
     START,

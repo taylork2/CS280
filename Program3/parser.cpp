@@ -6,6 +6,7 @@
 //============================================================================
 
 #include "p2lex.h"
+#include "gettoken.cpp"
 #include <string>
 #include <iostream>
 #include <fstream>
@@ -32,14 +33,14 @@ public:
 		this -> right = right;
 	}
 
-	int nodeCount(PTree *node) {
-		if (node == NULL){
-			return 0;
+	int nodeCount() {
+		if (left == NULL && right==NULL){
+			return 1;
 		}
 		else {
-			int count = 1;
-			count += nodeCount(node -> left);
-			count += nodeCount(node -> right);
+			count = 1;
+			count += left->nodeCount();
+			count += right->nodeCount();
 			return count; 
 		}
 	}
@@ -69,6 +70,21 @@ public:
 	PTreeExpr(int line, PTree *s1, PTree *s2 = 0) : PTree(line, s1, s2) {}
 };
 
+class PTreeTerm : public PTree{ 
+public:
+	PTreeTerm(int line, PTree *s1, PTree *s2 = 0) : PTree(line, s1, s2) {}
+};
+
+class PTreePrimary : public PTree{
+public:
+	PTreePrimary(int line, PTree *s1, PTree *s2 = 0) : PTree(line, s1, s2) {}
+};
+
+class PTreeSearch : public PTree{
+public:
+	PTreeSearch(int line, PTree *s1, PTree *s2 = 0) : PTree(line, s1, s2) {}
+};
+
 //===============================================================================
 
 string lexeme;
@@ -88,6 +104,19 @@ PTree *Primary(istream *br){
 
 //Term ::= Primary INTERSECT Term | Primary
 PTree *Term(istream *br){
+	PTree *Primary;
+	primary = Primary(br);
+	if (primary){
+		if (getToken(br)==INTERSECT){
+			PTree *term;
+			term = Term(br);
+			if (term){}
+			else{
+
+			}
+		}
+		else {return new PTreeTerm(linenum, primary,0);}
+	}
 	return 0;
 }
 
@@ -97,21 +126,21 @@ PTree *Expr(istream *br){
 	term = Term(br);
 	if (term){
 		if 	(getToken(br, lexeme) == UNION){
-			PTree *term2;
-			term2 = Term(br);
-			if (term2){
-				PTree *expr;
-				expr = Expr(br);
-				if (expr){
-					return new PTreeStmtList(linenum, expr, Expr(br));
-				}
-				return 0;
+			pExpr = new PTreeExpr(linenum, UNION, 0);
+			PTree *expr;
+			expr = Expr(br);
+			if (expr){
+				pExpr -> left = term;
+				pExpr -> right = expr;
+				return pExpr;
 			}
+			else {
+				usage("Expecting expr");
+				errorCount++;	
+				return 0;}
 			return 0;
 		}
-		else{
-			return new PTreeStmtList(linenum, term, Expr(br));
-		}
+		else{return new PTreeExpr(linenum, term, 0);}
 	}
 	return 0;
 }
@@ -119,32 +148,31 @@ PTree *Expr(istream *br){
 
 //Stmt ::= PRINT Expr SC | SET ID Expr SC
 PTree *Stmt(istream *br) {
-	
 	if (getToken(br, lexeme) == PRINT){
+		pStmt = new PTreeStmt(linenum, PRINT, 0);
 		PTree *expr;
 		expr = Expr(br);
 		if (expr){
 			if (getToken(br, lexeme) == SC){
-				return new PTreeStmt(linenum, expr, Stmt(br));
+				pStmt -> left = expr;
+				return pStmt;
 			}
 			else{
 				usage("Expecting semi-colon");
 				errorCount++;	
 				return 0;}
 		}
-		else {
-			usage("Expecting expression");
-			errorCount++;
-			return 0;
-		}
 	}
 	else if (getToken(br, lexeme) == SET){
 		if (getToken(br, lexeme) == ID){
+			pStmt = new PTreeStmt(linenum, ID, 0);
+			pStmt-> left = SET;
 			PTree *expr;
 			expr = Expr(br);
 			if (expr){
 				if (getToken(br, lexeme) == SC){
-					return new PTreeStmt(linenum, expr, Stmt(br));
+					pStmt->right = expr;
+					return pStmt;
 				}
 				else {
 					usage("Expecting semi-colon");
