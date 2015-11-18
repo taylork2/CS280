@@ -25,7 +25,7 @@ void usage(string msg){
 }
 
 void invalid(string op, int line) {
-	cerr << "Invalid " << op << " for given types at line " << line << endl;
+	cerr << "Invalid " << op << " operator for given types at line " << line << endl;
 }
 
 class PTree{
@@ -188,10 +188,10 @@ public:
 		this -> lex = lex;
 		this -> s1 = s1;
 		this -> s2 = s2;
-	}
+	}	
 	void findEmptyStrings(){
 		if (lex == "\"\""){
-			cout << "Empty String at " << line << endl;
+			cout << "Empty string at line " << line << endl;
 		}
 		if (s1 != NULL){s1 -> findEmptyStrings();}
 		if (s2 != NULL){s2 -> findEmptyStrings();}
@@ -228,7 +228,7 @@ PTree *Search_expr(istream *br){
 	}
 	else {
 		pushbackToken(tok, lexeme);
-		usage("Expecting primary");
+		usage("Missing primary");
 	}
 	return 0;
 }
@@ -365,3 +365,5 @@ PTree *StmtList(istream *br) {
 PTree *Program(istream *br){
 	return StmtList(br);
 }
+
+#endif

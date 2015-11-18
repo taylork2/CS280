@@ -6,7 +6,7 @@
 //============================================================================
 
 #include "p2lex.h"
-#include "parser.cpp"
+#include "parser.h"
 #include <string>
 #include <iostream>
 #include <fstream>
@@ -47,9 +47,12 @@ int main(int argc, char *argv[]){
 
 	PTree *test;
 	test = Program(br);
-	cout << test->nodeCount() << endl;
-
+	if (errorCount == 0){
+		cout << "Node Count Is: " << test->nodeCount() << endl;
+		test -> findEmptyStrings();
+		test -> findInvalidOps();
+	}
+	
 
 	return 0;
 }
-

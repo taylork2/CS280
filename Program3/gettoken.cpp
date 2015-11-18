@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <cstdlib>
 
-int linenum=0;
+int linenum=1;
 
 enum LexState {
     START,
@@ -122,7 +122,7 @@ getActualToken(istream *br, string& lexeme)
                 
             default:
                 cerr << "This should never happen!" << endl;
-                return ERR;
+                exit(1);
                 break;
         }
     }
