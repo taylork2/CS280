@@ -1,0 +1,5 @@
+// this should fail with bad op
+
+set x search "colossus.txt" for "tired";
+
+print x ^ x;

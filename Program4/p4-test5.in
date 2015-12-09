@@ -1,0 +1,23 @@
+// dunkin
+
+set ddd "Donut";
+set sep "-  -  -  -  -  -  -  -  -  -";
+
+set coffee search "dunkin.txt" for "Coffee";
+set donut search "dunkin.txt" for "Donut";
+
+print "Just Coffee";
+print coffee;
+print sep;
+
+print "Donuts!!!";
+print donut;
+print sep;
+
+print "Coffee and";
+print coffee ^ ddd;
+print sep;
+
+print "Coffee or";
+print coffee + ddd;
+print sep;

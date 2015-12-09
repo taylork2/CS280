@@ -1,0 +1,13 @@
+// goes with Colossus
+
+set skip "---";
+
+set x search "colossus.txt" for "-";
+print x;
+print skip;
+
+print x ^ "and";
+print skip;
+print (x ^ "and") ^ "b";
+print skip;
+print ((x ^ "and") ^ "b") ^ "z";

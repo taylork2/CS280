@@ -1,0 +1,5 @@
+// this should fail with unset variable
+
+set x "hello";
+
+print x ^ y;

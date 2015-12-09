@@ -1,0 +1,10 @@
+set x "help me";
+print x;
+set x "please";
+print x;
+
+print "I think this might be working";
+print search "underpressure.txt" for "love";
+
+print "and this";
+print search "underpressure.txt" for "love" ^ ",";

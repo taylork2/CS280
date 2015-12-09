@@ -1,0 +1,25 @@
+// another test
+
+set lady search "tiger.txt" for "lady";
+set tiger search "tiger.txt" for "tiger";
+
+print lady;
+print "- - -";
+print tiger;
+print "- - - - -";
+
+print lady + "tiger";
+
+print "-----";
+
+set ladytiger lady ^ "tiger";
+print ladytiger;
+
+print "--------------------";
+
+set ladytiger ladytiger + "cruel";
+print ladytiger;
+
+print "-----";
+
+print tiger ^ "blood";

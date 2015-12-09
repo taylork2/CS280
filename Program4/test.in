@@ -1,0 +1,5 @@
+print "something";
+print "another thing";
+set x "hello";
+print x;
+print search "underpressure.txt" for "Pressure" +	 "down";

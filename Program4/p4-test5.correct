@@ -1,0 +1,602 @@
+Just Coffee
+dunkin.txt:40:Blueberry Coffee Cake Brownie
+dunkin.txt:41:Blueberry Coffee Small
+dunkin.txt:60:Caramel Coffee Small
+dunkin.txt:61:Caramel Coffee with Cream Large Caramel Coffee with Cream Medium
+dunkin.txt:62:Caramel Coffee with Cream Small Caramel Coffee with Cream Xlarge Caramel Mocha Coffee Large
+dunkin.txt:63:Caramel Iced Coffee Large 32 fl oz 230 0 0 0 0 5 100 52 0 49 5 0 2 15 2
+dunkin.txt:64:Caramel Iced Coffee Medium 24 fl oz 170 0 0 0 0 0 75 39 0 37 4 0 0 15 2
+dunkin.txt:65:Caramel Iced Coffee Small 16 fl oz 110 0 0 0 0 0 50 26 0 24 2 0 0 8 2
+dunkin.txt:66:Caramel Iced Coffee with Cream 16 fl oz 170 50 6 3.5 0 20 60 27 0 24 3 4 0 10 2 Small
+dunkin.txt:67:Caramel Iced Coffee with Cream 24 fl oz 260 80 9 5 0 30 90 41 0 37 5 6 2 15 2 Medium
+dunkin.txt:68:Caramel Iced Coffee with Cream 32 fl oz 340 110 12 7 0 45 125 54 0 49 6 8 2 25 2 Large
+dunkin.txt:72:Caramel Mocha Iced Coffee Caramel Mocha Iced Coffee Cream Large
+dunkin.txt:73:Caramel Mocha Iced Coffee Cream Medium
+dunkin.txt:74:Caramel Mocha Iced Coffee Cream Small
+dunkin.txt:75:Caramel Mocha Iced Coffee Large 32 fl oz 230 5 0 0 0 0 45 54 1 48 4 0 0 6 0
+dunkin.txt:76:Caramel Mocha Iced Coffee Medium
+dunkin.txt:87:Chocolate Chip Coffee Cake English Muffin
+dunkin.txt:90:Chocolate Crumb Cake Donut Chocolate Dipped French Cruller Chocolate Dulce de Leche Donut Chocolate Frosted Cake Donut Chocolate Frosted Coffee Roll Chocolate Frosted Donut
+dunkin.txt:104:Coffee
+dunkin.txt:105:Coffee Cake Muffin
+dunkin.txt:106:Coffee Coffee Coffee Coffee Coffee Coffee Coffee Coffee
+dunkin.txt:107:Coffee Extra Large
+dunkin.txt:108:Coffee Large
+dunkin.txt:109:Coffee Medium
+dunkin.txt:110:Coffee Roll
+dunkin.txt:111:Coffee Small
+dunkin.txt:112:Coffee with Cream Large Coffee with Cream Medium Coffee with Cream Small Coffee with Cream XLarge Coffee with Cream and Sugar Large
+dunkin.txt:113:Coffee with Cream and Sugar Medium
+dunkin.txt:114:Coffee with Cream and Sugar Small
+dunkin.txt:115:Coffee with Cream and Sugar XLarge
+dunkin.txt:116:Coffee with Skim Milk Large Coffee with Skim Milk Medium Coffee with Skim Milk Small Coffee with Skim Milk XLarge Coffee with Skim Milk and Splenda Large
+dunkin.txt:117:Coffee with Skim Milk and Splenda Medium
+dunkin.txt:118:Coffee with Skim Milk and Splenda Small
+dunkin.txt:119:Coffee with Skim Milk and Splenda XLarge
+dunkin.txt:120:Coffee with Skim Milk and Sugar Large
+dunkin.txt:121:Coffee with Skim Milk and Sugar Medium
+dunkin.txt:122:Coffee with Skim Milk and Sugar Small
+dunkin.txt:123:Coffee with Skim Milk and Sugar XLarge
+dunkin.txt:124:Coffee with Splenda Large Coffee with Splenda Medium Coffee with Splenda Small Coffee with Splenda XLarge Coffee with Sugar Large
+dunkin.txt:125:Coffee with Sugar Medium Coffee with Sugar Small
+dunkin.txt:126:Coffee with Sugar XLarge Coffee with Whole Milk Large Coffee with Whole Milk Medium Coffee with Whole Milk Small Coffee with Whole Milk XLarge
+dunkin.txt:127:Coffee with Whole Milk and Large
+dunkin.txt:128:Coffee with Whole Milk and Medium
+dunkin.txt:129:Coffee with Whole Milk and Small
+dunkin.txt:130:Coffee with Whole Milk and XLarge
+dunkin.txt:189:French Vanilla Coffee Small
+dunkin.txt:199:French Vanilla Swirl Hot with Cream Large French Vanilla Swirl Hot with Cream Medium French Vanilla Swirl Hot with Cream Small French Vanilla Swirl Hot with Cream XLarge Hazelnut Coffee Large Hazelnut Coffee Medium Hazelnut Coffee Small
+dunkin.txt:213:Frozen Caramel Coffee Coolatta 16 fl oz 300 0 0 0 0 5 90 72 0 71 5 6 0 20 0 with Skim Milk Small
+dunkin.txt:214:Frozen Caramel Coffee Coolatta 16 fl oz 330 35 4 2.5 0 15 90 72 0 71 5 4 0 20 0 with Milk Small
+dunkin.txt:215:Frozen Caramel Coffee Coolatta 16 fl oz 490 210 23 15 0.5 80 90 71 0 65 5 15 2 15 0 with Cream Small
+dunkin.txt:216:Frozen Caramel Coffee Coolatta 24 fl oz 450 0 0 0 0 5 135 108 0 106 8 8 0 30 0 with Skim Milk Medium
+dunkin.txt:217:Frozen Caramel Coffee Coolatta 24 fl oz 500 50 6 3.5 0 20 140 108 0 106 8 8 0 30 0 with Milk Medium
+dunkin.txt:218:Frozen Caramel Coffee Coolatta 24 fl oz 740 310 35 22 1 125 130 106 0 97 7 25 2 25 0 with Cream Medium
+dunkin.txt:219:Frozen Caramel Coffee Coolatta 32 fl oz 600 0 0 0 0 10 180 145 0 141 11 10 0 40 0 with Skim Milk Large
+dunkin.txt:220:Frozen Caramel Coffee Coolatta 32 fl oz 670 70 8 4.5 0 30 180 144 0 141 10 10 0 40 0 with Milk Large
+dunkin.txt:221:Frozen Caramel Coffee Coolatta 32 fl oz 990 420 47 29 1.5 165 180 141 0 130 9 35 4 35 0 with Cream Large
+dunkin.txt:222:Frozen Coffee Coolatta
+dunkin.txt:223:Frozen Coffee Coolatta Lite 24 fl oz 130 40 4.5 2.5 0 15 75 23 0 17 4 4 0 15 0 Medium - 75% fewer calories
+dunkin.txt:224:Frozen Coffee Coolatta Lite Large 32 fl oz 170 50 6 3.5 0 20 100 30 0 22 6 6 0 20 0 - 75% fewer calories than our
+dunkin.txt:225:Frozen Coffee Coolatta Lite Small - 16 fl oz 80 25 3 1.5 0 10 50 15 0 11 3 2 0 10 0 75% fewer calories than our Small
+dunkin.txt:226:Frozen Coffee Coolatta made with Cream
+dunkin.txt:227:Frozen Coffee Coolatta with Cream 16 fl oz 400 210 23 15 0.5 80 75 49 0 43 3 15 2 10 0 Small
+dunkin.txt:228:Frozen Coffee Coolatta with Cream 24 fl oz 600 310 35 22 1 120 110 73 0 65 5 25 2 20 0 Medium
+dunkin.txt:229:Frozen Coffee Coolatta with Cream 32 fl oz 800 420 47 29 1.5 160 150 97 0 86 7 30 4 25 0 Large
+dunkin.txt:230:Frozen Coffee Coolatta with Milk 16 fl oz 240 35 4 2.5 0 10 80 50 0 49 4 4 0 15 0 Small
+dunkin.txt:231:Frozen Coffee Coolatta with Milk 24 fl oz 360 50 6 3.5 0 20 120 75 0 73 6 6 0 20 0 Medium
+dunkin.txt:232:Frozen Coffee Coolatta with Milk 32 fl oz 480 70 8 4.5 0 25 160 100 0 98 8 8 0 30 0 Large
+dunkin.txt:233:Frozen Coffee Coolatta with Skim 16 fl oz 210 0 0 0 0 0 80 50 0 49 4 4 0 15 0 Milk Small
+dunkin.txt:234:Frozen Coffee Coolatta with Skim 24 fl oz 310 0 0 0 0 5 115 75 0 74 6 8 0 25 0 Milk Medium
+dunkin.txt:235:Frozen Coffee Coolatta with Skim 32 fl oz 410 0 0 0 0 5 160 101 0 98 8 10 0 30 0 Milk Large
+dunkin.txt:237:Frozen French Vanilla Swirl Coffee 16 fl oz 300 0 0 0 0 5 105 72 0 70 5 6 0 20 0 Coolatta with Skim Milk Small
+dunkin.txt:238:Frozen French Vanilla Swirl Coffee 16 fl oz 330 35 4 2.5 0 15 105 72 0 70 5 4 0 20 0 Coolatta with Whole Milk Small
+dunkin.txt:239:Frozen French Vanilla Swirl Coffee 16 fl oz 490 210 23 14 0.5 80 100 70 0 64 5 15 2 15 0 Coolatta with Cream Small
+dunkin.txt:240:Frozen French Vanilla Swirl Coffee 24 fl oz 450 0 0 0 0 5 160 108 0 105 8 8 0 30 0 Coolatta with Skim Milk Medium
+dunkin.txt:241:Frozen French Vanilla Swirl Coffee 24 fl oz 500 50 6 3.5 0 20 160 108 0 104 8 8 0 30 0 Coolatta with Whole Milk Medium
+dunkin.txt:242:Frozen French Vanilla Swirl Coffee 24 fl oz 740 310 35 22 1 120 150 106 0 96 7 25 2 25 0 Coolatta with Cream Medium
+dunkin.txt:243:Frozen French Vanilla Swirl Coffee 32 fl oz 600 0 0 0 0 10 210 144 0 140 11 10 0 40 0 Coolatta with Skim Milk Large
+dunkin.txt:244:Frozen French Vanilla Swirl Coffee 32 fl oz 670 70 8 4.5 0 30 210 144 0 139 10 10 0 35 0 Coolatta with Whole Milk Large
+dunkin.txt:245:Frozen French Vanilla Swirl Coffee 32 fl oz 990 420 46 29 1.5 165 200 141 0 128 9 35 4 35 0 Coolatta with Cream Large
+dunkin.txt:246:Frozen Hazelnut Swirl Coffee 16 fl oz 300 0 0 0 0 5 105 72 0 70 5 6 0 20 0 Coolatta with Skim Milk Small
+dunkin.txt:247:Frozen Hazelnut Swirl Coffee 16 fl oz 330 35 4 2.5 0 15 105 72 0 70 5 4 0 20 0 Coolatta with Whole Milk Small
+dunkin.txt:248:Frozen Hazelnut Swirl Coffee 16 fl oz 490 210 23 14 0.5 80 100 71 0 64 5 15 2 15 0 Coolatta with Cream Small
+dunkin.txt:249:Frozen Hazelnut Swirl Coffee 24 fl oz 450 0 0 0 0 5 160 108 0 105 8 8 0 30 0 Coolatta with Skim Milk Medium
+dunkin.txt:250:Frozen Hazelnut Swirl Coffee 24 fl oz 500 50 6 3.5 0 20 160 108 0 104 8 8 0 30 0 Coolatta with Whole Milk Medium
+dunkin.txt:251:Frozen Hazelnut Swirl Coffee 24 fl oz 740 310 35 22 1 120 150 106 0 96 7 25 2 25 0 Coolatta with Cream Medium
+dunkin.txt:252:Frozen Hazelnut Swirl Coffee 32 fl oz 600 0 0 0 0 10 210 145 0 140 11 10 0 40 0 Coolatta with Skim Milk Large
+dunkin.txt:253:Frozen Hazelnut Swirl Coffee 32 fl oz 670 70 8 4.5 0 30 210 144 0 139 10 10 0 35 0 Coolatta with Whole Milk Large
+dunkin.txt:254:Frozen Hazelnut Swirl Coffee 32 fl oz 990 420 46 29 1.5 165 200 141 0 128 9 35 4 35 0 Coolatta with Cream Large
+dunkin.txt:256:Frozen Mocha Coffee Coolatta with 16 fl oz 300 5 0 0 0 0 90 72 1 68 5 4 0 15 0 Skim Milk Small
+dunkin.txt:257:Frozen Mocha Coffee Coolatta with 16 fl oz 330 40 4.5 2.5 0 10 90 72 1 68 5 4 0 15 0 Milk Small
+dunkin.txt:258:Frozen Mocha Coffee Coolatta with 16 fl oz 490 210 24 15 0.5 80 85 70 1 62 4 15 2 10 0 Cream Small
+dunkin.txt:259:Frozen Mocha Coffee Coolatta with 24 fl oz 450 5 0.5 0 0 5 135 108 2 103 8 8 0 25 0 Skim Milk Medium
+dunkin.txt:260:Frozen Mocha Coffee Coolatta with 24 fl oz 500 60 7 4 0 20 135 108 2 102 7 6 0 20 0 Milk Medium
+dunkin.txt:261:Frozen Mocha Coffee Coolatta with 24 fl oz 740 320 36 22 1 120 130 105 2 94 6 25 2 20 0 Cream Medium
+dunkin.txt:262:Frozen Mocha Coffee Coolatta with 32 fl oz 600 10 1 0.5 0 5 180 144 2 137 10 10 0 30 0 Skim Milk Large
+dunkin.txt:263:Frozen Mocha Coffee Coolatta with 32 fl oz 670 80 9 5 0 25 180 143 2 136 10 8 0 30 0 Milk Large
+dunkin.txt:264:Frozen Mocha Coffee Coolatta with 32 fl oz 990 430 47 29 1.5 160 170 141 2 125 8 30 4 25 0 Cream Large
+dunkin.txt:265:Frozen Pumpkin Swirl Coffee 16 fl oz 300 0 0 0 0 5 135 71 0 70 6 6 0 20 0 Coolatta with Skim Milk Small
+dunkin.txt:266:Frozen Pumpkin Swirl Coffee 16 fl oz 330 35 4 2.5 0 15 135 71 0 70 5 4 0 20 0 Coolatta with Whole Milk Small
+dunkin.txt:267:Frozen Pumpkin Swirl Coffee 16 fl oz 490 210 23 15 0.5 80 130 70 0 64 5 15 2 20 0 Coolatta with Cream Small
+dunkin.txt:268:Frozen Pumpkin Swirl Coffee 24 fl oz 450 0 0 0 0 5 200 107 0 105 9 8 2 35 0 Coolatta with Skim Milk Medium
+dunkin.txt:269:Frozen Pumpkin Swirl Coffee 24 fl oz 500 50 6 3.5 0 20 200 107 0 104 8 6 2 30 0 Coolatta with Whole Milk Medium
+dunkin.txt:270:Frozen Pumpkin Swirl Coffee 24 fl oz 740 310 35 22 1 120 190 105 0 96 7 25 4 30 0 Coolatta with Cream Medium
+dunkin.txt:271:Frozen Pumpkin Swirl Coffee 32 fl oz 600 5 0 0 0 5 270 143 0 140 12 10 2 45 0 Coolatta with Skim Milk Large
+dunkin.txt:272:Frozen Pumpkin Swirl Coffee 32 fl oz 670 70 8 4.5 0 25 270 142 0 139 11 8 2 40 0 Coolatta with Whole Milk Large
+dunkin.txt:273:Frozen Pumpkin Swirl Coffee Coolatta with Cream Large
+dunkin.txt:274:Frozen Snickerdoodle Coffee 16 fl oz 300 0 0 0 0 5 105 72 0 71 5 6 0 20 0 Coolatta with Skim Milk Small
+dunkin.txt:275:Frozen Snickerdoodle Coffee 16 fl oz 330 35 4 2.5 0 15 105 72 0 70 5 4 0 20 0 Coolatta with Whole Milk Small
+dunkin.txt:276:Frozen Snickerdoodle Coffee 16 fl oz 500 210 23 14 0.5 80 105 71 0 65 5 15 2 15 0 Coolatta with Cream Small
+dunkin.txt:277:Frozen Snickerdoodle Coffee 24 fl oz 450 0 0 0 0 5 160 108 0 106 8 8 0 30 0 Coolatta with Skim Milk Medium
+dunkin.txt:278:Frozen Snickerdoodle Coffee 24 fl oz 500 50 6 3.5 0 20 160 108 0 105 8 8 0 30 0 Coolatta with Whole Milk Medium
+dunkin.txt:279:Frozen Snickerdoodle Coffee 24 fl oz 740 310 35 22 1 120 150 106 0 97 7 25 2 25 0 Coolatta with Cream Medium
+dunkin.txt:280:Frozen Snickerdoodle Coffee 32 fl oz 600 0 0 0 0 10 210 145 0 141 11 10 0 40 2 Coolatta with Skim Milk Large
+dunkin.txt:281:Frozen Snickerdoodle Coffee 32 fl oz 670 70 8 4.5 0 30 210 144 0 141 10 10 0 40 2 Coolatta with Whole Milk Large
+dunkin.txt:282:Frozen Snickerdoodle Coffee 32 fl oz 990 420 47 29 1.5 165 210 141 0 129 9 35 4 35 2 Coolatta with Cream Large
+dunkin.txt:283:Frozen Sugar Cookie Coffee 16 fl oz 300 0 0 0 0 5 105 73 0 71 5 6 0 20 0 Coolatta with Skim Milk Small
+dunkin.txt:284:Frozen Sugar Cookie Coffee 16 fl oz 340 35 4 3 2.5 15 105 72 0 70 5 4 0 20 0 Coolatta with Whole Milk Small
+dunkin.txt:285:Frozen Sugar Cookie Coffee 16 fl oz 500 210 23 14 0.5 80 105 71 0 65 5 15 2 15 0 Coolatta with Cream Small
+dunkin.txt:286:Frozen Sugar Cookie Coffee 24 fl oz 450 0 0 0 0 5 160 109 0 106 8 8 0 30 0 Coolatta with Skim Milk Medium
+dunkin.txt:287:Frozen Sugar Cookie Coffee 24 fl oz 500 50 6 4 3.5 20 160 108 0 106 8 8 0 30 0 Coolatta with Whole Milk Medium
+dunkin.txt:288:Frozen Sugar Cookie Coffee 24 fl oz 740 310 35 22 1 120 150 106 0 97 7 25 2 25 0 Coolatta with Cream Medium
+dunkin.txt:289:Frozen Sugar Cookie Coffee 32 fl oz 610 0 0 0 0 10 210 145 0 141 11 10 0 40 0 Coolatta with Skim Milk Large
+dunkin.txt:290:Frozen Sugar Cookie Coffee 32 fl oz 670 70 8 5 4.5 30 210 141 0 141 10 10 0 40 0 Coolatta with Whole Milk Large
+dunkin.txt:291:Frozen Sugar Cookie Coffee 32 fl oz 990 420 47 29 1.5 165 210 142 0 129 9 35 4 35 0 Coolatta with Cream Large
+dunkin.txt:301:Glazed Fritter Homestyle Apple Pie Original Coffee Cake Plain Croissant Pretzel Twist Pumpkin Coffee Cake
+dunkin.txt:336:Ground Dark Roast Packaged 1 Packaged Coffee Coffee Pack
+dunkin.txt:337:Ground Dunkin' Decaf Packaged 1 Packaged Coffee Coffee Pack
+dunkin.txt:338:Ground French Vanilla Packaged 1 Packaged Coffee Coffee Pack
+dunkin.txt:339:Ground Hazelnut Packaged Coffee 1 Packaged Coffee Pack
+dunkin.txt:340:Ground Original Blend Packaged 1 Packaged Coffee Coffee Pack
+dunkin.txt:346:Hazelnut Coffee XLarge
+dunkin.txt:347:Hazelnut Packaged Coffee 1 Packaged Coffee Pack
+dunkin.txt:348:Hazelnut Swirl Hot Coffee Large Hazelnut Swirl Hot Coffee Medium Hazelnut Swirl Hot Coffee Small Hazelnut Swirl Hot Coffee XLarge Hazelnut Swirl Hot Coffee with Cream Large
+dunkin.txt:349:Hazelnut Swirl Hot Coffee with Cream Medium
+dunkin.txt:350:Hazelnut Swirl Hot Coffee with Cream Small
+dunkin.txt:351:Hazelnut Swirl Hot Coffee with Cream XLarge
+dunkin.txt:356:Hazelnut Swirl Iced Coffee Cream Medium
+dunkin.txt:357:Hazelnut Swirl Iced Coffee Cream Small
+dunkin.txt:358:Hazelnut Swirl Iced Coffee Hazelnut Swirl Iced Coffee Cream Large
+dunkin.txt:372:Hot Coffee Large Hot Coffee Medium Hot Coffee Small Hot Coffee XLarge Hot Coffee with
+dunkin.txt:373:Hot Coffee with
+dunkin.txt:374:Hot Coffee with Almond Milk Large
+dunkin.txt:375:Hot Coffee with Almond Milk Medium
+dunkin.txt:376:Hot Coffee with Almond Milk Small
+dunkin.txt:377:Hot Coffee with Almond Milk XLarge
+dunkin.txt:413:Iced Coffee
+dunkin.txt:414:Iced Coffee Large
+dunkin.txt:415:Iced Coffee Medium
+dunkin.txt:416:Iced Coffee Small
+dunkin.txt:417:Iced Coffee with Almond Milk Large
+dunkin.txt:418:Iced Coffee with Almond Milk Medium
+dunkin.txt:419:Iced Coffee with Almond Milk Small
+dunkin.txt:420:Iced Coffee with Cream Large Iced Coffee with Cream Medium Iced Coffee with Cream Small Iced Coffee with Cream and Sugar Large
+dunkin.txt:421:Iced Coffee with Cream and Sugar Medium
+dunkin.txt:422:Iced Coffee with Cream and Sugar Small
+dunkin.txt:423:Iced Coffee with Milk Large
+dunkin.txt:424:Iced Coffee with Milk Medium Iced Coffee with Milk Small
+dunkin.txt:425:Iced Coffee with Milk and Sugar Large
+dunkin.txt:426:Iced Coffee with Milk and Sugar Medium
+dunkin.txt:427:Iced Coffee with Milk and Sugar Small
+dunkin.txt:428:Iced Coffee with Skim Milk
+dunkin.txt:429:Iced Coffee with Skim Milk Medium
+dunkin.txt:430:Iced Coffee with Skim Milk Splenda Large
+dunkin.txt:431:Iced Coffee with Skim Milk Splenda Medium
+dunkin.txt:432:Iced Coffee with Skim Milk Splenda Small
+dunkin.txt:433:Iced Coffee with Skim Milk Sugar Large
+dunkin.txt:434:Iced Coffee with Skim Milk Sugar Medium
+dunkin.txt:435:Iced Coffee with Skim Milk Sugar Small
+dunkin.txt:436:Iced Coffee with Splenda Large Iced Coffee with Splenda Medium Iced Coffee with Splenda Small Iced Coffee with Sugar Large Iced Coffee with Sugar Medium Iced Coffee with Sugar Small Iced Dunkin Dark® Roast Coffee with Cream and Sugar Large Iced Dunkin Dark® Roast Coffee with Cream and Sugar Medium Iced Dunkin Dark® Roast Coffee with Cream and Sugar Small
+dunkin.txt:437:Iced Dunkin Dark® Roast Coffee with Skim Milk and Splenda Large
+dunkin.txt:438:Iced Dunkin Dark® Roast Coffee with Skim Milk and Splenda Medium
+dunkin.txt:439:Iced Dunkin Dark® Roast Coffee with Skim Milk and Splenda Small Mocha Iced Coffee with Cream Large
+dunkin.txt:499:Large Frozen Coffee Coolatta
+dunkin.txt:522:Maple Creme Drizzle Donut Maple Crumb Cake Donut Maple Frosted Coffee Roll Maple Frosted Donut
+dunkin.txt:532:Mocha Coffee Large
+dunkin.txt:533:Mocha Coffee Medium
+dunkin.txt:534:Mocha Coffee Medium Mocha Coffee Small Mocha Coffee XLarge
+dunkin.txt:535:Mocha Coffee Small
+dunkin.txt:536:Mocha Coffee with Mocha Coffee with Mocha Coffee with Mocha Coffee with Coffee Small
+dunkin.txt:537:Mocha Iced Coffee with Cream Medium
+dunkin.txt:538:Mocha Iced Coffee with Cream Small
+dunkin.txt:546:Mocha Swirl Coffee Extra Large Mocha Swirl Coffee Large
+dunkin.txt:547:Mocha Swirl Coffee Medium Mocha Swirl Coffee Small
+dunkin.txt:548:Mocha Swirl Coffee with Cream Extra Large
+dunkin.txt:549:Mocha Swirl Coffee with Cream Large
+dunkin.txt:550:Mocha Swirl Coffee with Cream Medium
+dunkin.txt:551:Mocha Swirl Coffee with Cream Small
+dunkin.txt:571:Packaged Coffee
+dunkin.txt:575:Peppermint Mocha Hot Coffee Large
+dunkin.txt:576:Peppermint Mocha Hot Coffee Medium
+dunkin.txt:577:Peppermint Mocha Hot Coffee Small
+dunkin.txt:578:Peppermint Mocha Hot Coffee XLarge
+dunkin.txt:579:Peppermint Mocha Hot Coffee with Cream Large
+dunkin.txt:580:Peppermint Mocha Hot Coffee with Cream Medium
+dunkin.txt:581:Peppermint Mocha Hot Coffee with Cream Small
+dunkin.txt:582:Peppermint Mocha Hot Coffee with Cream XLarge
+dunkin.txt:594:Peppermint Mocha Iced Coffee Large
+dunkin.txt:595:Peppermint Mocha Iced Coffee Medium
+dunkin.txt:596:Peppermint Mocha Iced Coffee Small
+dunkin.txt:597:Peppermint Mocha Iced Coffee with Cream Large
+dunkin.txt:598:Peppermint Mocha Iced Coffee with Cream Medium Peppermint Mocha Iced Coffee with Cream Small
+dunkin.txt:629:Pumpkin Swirl Hot Coffee with Cream Small
+dunkin.txt:630:Pumpkin Swirl Hot Coffee with Cream XLarge
+dunkin.txt:637:Pumpkin Swirl Iced Coffee
+dunkin.txt:638:Pumpkin Swirl Iced Coffee Pumpkin Swirl Iced Coffee Cream Large
+dunkin.txt:639:Pumpkin Swirl Iced Coffee Pumpkin Swirl Iced Coffee Medium
+dunkin.txt:646:Raspberry Coffee Small Snickerdoodle Hot Coffee Large Snickerdoodle Hot Coffee Medium Snickerdoodle Hot Coffee Small Snickerdoodle Hot Coffee XLarge Snickerdoodle Hot Coffee with Cream Large
+dunkin.txt:689:Snickerdoodle Hot Coffee with Cream Medium Snickerdoodle Hot Coffee with Cream Small
+dunkin.txt:690:Snickerdoodle Hot Coffee with Cream XLarge
+dunkin.txt:703:Snickerdoodle Iced Coffee Large Snickerdoodle Iced Coffee Medium Snickerdoodle Iced Coffee Small Snickerdoodle Iced Coffee with Cream Large
+dunkin.txt:704:Snickerdoodle Iced Coffee with Cream Medium
+dunkin.txt:705:Snickerdoodle Iced Coffee with Cream Small
+dunkin.txt:736:Sugar Cookie Hot Coffee with Cream Small
+dunkin.txt:737:Sugar Cookie Hot Coffee with Cream XLarge
+dunkin.txt:750:Sugar Cookie Iced Coffee Large Sugar Cookie Iced Coffee Medium Sugar Cookie Iced Coffee Small
+dunkin.txt:751:Sugar Cookie Iced Coffee with 16 fl oz 180 50 6 3.5 0 20 50 28 0 25 3 4 0 8 0 Cream Small
+dunkin.txt:752:Sugar Cookie Iced Coffee with 24 fl oz 260 80 9 5 0 35 75 42 0 37 4 8 0 10 0 Cream Medium
+dunkin.txt:753:Sugar Cookie Iced Coffee with Cream Large
+dunkin.txt:791:Toasted Almond Coffee Small 10 fl oz 10 0 0 0 0 0 5 1 0 0 0 0 0 0 0
+dunkin.txt:812:Vanilla Frosted Coffee Roll Vanilla Frosted Donut
+dunkin.txt:819:Whole Bean Original Blend 1 Packaged Packaged Coffee Coffee Pack
+dunkin.txt:831:than our Medium Frozen Coffee
+dunkin.txt:837:with Cream Small Hazelnut Swirl Iced Coffee Hazelnut Swirl Iced Coffee Medium
+dunkin.txt:838:with Iced Coffee Iced Coffee Iced Coffee Iced Coffee Iced Coffee Iced Coffee
+-  -  -  -  -  -  -  -  -  -
+Donuts!!!
+dunkin.txt:2:1 Stick 1 Donut
+dunkin.txt:4:Allergy sufferers should always read the product ingredient statement and allergen information available at www.DunkinDonuts.com Please note that our restaurants prepare and serve products that contain allergens other than the products you select.
+dunkin.txt:11:Apple Croissant Donut
+dunkin.txt:12:Apple Crumb Topped Donut Apple Stick
+dunkin.txt:14:Apple Streusel Donut
+dunkin.txt:15:Apple n Spice Donut
+dunkin.txt:19:Bavarian Kreme Donut
+dunkin.txt:39:Blueberry Butternut Donut Blueberry Crumb Cake Donut Blueberry Crumb Donut
+dunkin.txt:43:Boston Kreme Croissant Donut Boston Kreme Donut
+dunkin.txt:44:Boston Kreme Drizzle Donut Boston Kreme Sprinkles Donut Boston Scream Donut
+dunkin.txt:45:Bowtie Donut
+dunkin.txt:48:Butternut Donut
+dunkin.txt:50:Buzzer Beater Donut
+dunkin.txt:59:Caramel Cheesecake Square Donut Cheesecake Square Donut Chocolate Butternut Donut Chocolate Coconut Donut Chocolate Creme Donut
+dunkin.txt:90:Chocolate Crumb Cake Donut Chocolate Dipped French Cruller Chocolate Dulce de Leche Donut Chocolate Frosted Cake Donut Chocolate Frosted Coffee Roll Chocolate Frosted Donut
+dunkin.txt:91:Chocolate Frosted Donut with Sprinkles
+dunkin.txt:92:Chocolate Headlight Donut Chocolate Iced Bismark Chocolate Long John
+dunkin.txt:93:Chocolate Peanut Butter Creme Donut
+dunkin.txt:95:Cinnamon Donut
+dunkin.txt:96:Cinnamon Guava Donut Cinnamon Stick
+dunkin.txt:100:Coconut Donut
+dunkin.txt:101:Coconut Drizzle Dulce de Leche Donut
+dunkin.txt:102:Coconut Dulce de Leche Donut Coconut Guava Donut
+dunkin.txt:141:Crumb Cake Donut
+dunkin.txt:167:Donuts
+dunkin.txt:168:Double Chocolate Donut
+dunkin.txt:170:Dunkin' Donuts has made a reasonable effort to provide nutritional and ingredient information based upon standard product formulations and following the FDA guidelines using formulation and nutrition labeling software. Variations may occur due to: seasonal conditions; regional differences; ingredient substitutions and differences in product assembly or size at the restaurant. Test products, limited time offers and regional menu variations may not be included and not all items listed may be available in all restaurants. The information on these printed materials may vary from that which may be available in our restaurants. We will update www.DunkinDonuts.com frequently, so please revisit this site for the
+dunkin.txt:175:Egg & Cheese on English Muffin Egg & Cheese on a Plain Bagel Egg White Veggie Flatbread Glazed Donut Breakfast Sandwich Ham, Egg & Cheese on Biscuit Ham, Egg & Cheese on Croissant Ham, Egg & Cheese on English Muffin
+dunkin.txt:181:Fall Harvest Donut
+dunkin.txt:185:Football Donut
+dunkin.txt:186:French Apple Donut
+dunkin.txt:206:Frosted Chocolate Creme Donut Frosted Maple Creme Donut Frosted Strawberry Dream Donut Frosted Vanilla Creme Donut Glazed Apple Maple Donut Glazed Bavarian Kreme Donut Glazed Blueberry Donut
+dunkin.txt:295:Glazed Caramel Donut
+dunkin.txt:296:Glazed Chocolate Creme Donut Glazed Chocolate Donut
+dunkin.txt:298:Glazed Croissant Donut
+dunkin.txt:299:Glazed Donut
+dunkin.txt:300:Glazed Dulce de Leche Donut Glazed Guava Donut
+dunkin.txt:302:Glazed Jelly Donut
+dunkin.txt:304:Glazed Lemon Donut
+dunkin.txt:305:Glazed Old Fashioned Donut Glazed Stick
+dunkin.txt:307:Glazed Strawberry Donut
+dunkin.txt:308:Glazed Vanilla Creme Donut Great White Donut
+dunkin.txt:341:Guava Burst Donut Guayaba Burst Donut Halloween Pumpkin Donut Jelly Donut
+dunkin.txt:513:Lemon Donut
+dunkin.txt:521:Maple Apple Croissant Donut Maple Creme Donut
+dunkin.txt:522:Maple Creme Drizzle Donut Maple Crumb Cake Donut Maple Frosted Coffee Roll Maple Frosted Donut
+dunkin.txt:523:Maple Frosted Sprinkles Donut Maple Vanilla Creme Donut Marble Frosted Donut
+dunkin.txt:558:Old Fashioned Cake Donut PEEPS Donut
+dunkin.txt:573:Peanut Butter Creme Donut Peanut Butter Creme and Jelly Donut
+dunkin.txt:574:Peanut Donut
+dunkin.txt:611:Philly Creme Donut
+dunkin.txt:612:Pittsburgh Donut
+dunkin.txt:615:Plain Stick Donut
+dunkin.txt:616:Play Ball Donut
+dunkin.txt:618:Powdered Donut
+dunkin.txt:621:Printed on 11-26-2015 . Information can change frequently, so check www.DunkinDonuts.com for the most current information. Before placing your order, please inform your server if a person in your party has a food allergy.
+dunkin.txt:623:Pumpkin Cheesecake Square Donut
+dunkin.txt:624:Pumpkin Crumb Cake Donut Pumpkin Donut
+dunkin.txt:651:Reeses Peanut Butter Square Donut
+dunkin.txt:688:Snickerdoodle Croissant Donut Sour Cream Donut
+dunkin.txt:717:Spiced Chocolate Dulce de Leche Donut
+dunkin.txt:718:Spiced Dulce de Leche Donut
+dunkin.txt:728:Strawberry Donut
+dunkin.txt:729:Strawberry Dream Donut Strawberry Dream Swirl Donut Strawberry Frosted Donut Strawberry Frosted Sprinkles Donut
+dunkin.txt:733:Strawberry Long John Strawberry Shortcake Donut Sugared Cake Donut
+dunkin.txt:773:Sugared Raised Donut
+dunkin.txt:785:Taillight Donut
+dunkin.txt:792:Toasted Coconut Donut
+dunkin.txt:810:Vanilla Berry Shortcake Donut Vanilla Chocolate Donut Vanilla Creme Donut
+dunkin.txt:812:Vanilla Frosted Coffee Roll Vanilla Frosted Donut
+dunkin.txt:813:Vanilla Frosted Sprinkles Donut Vanilla Headlight Donut Vanilla Long John
+dunkin.txt:815:Vanilla Peanut Butter Creme Donut
+dunkin.txt:825:most current information. Any customers with further questions regarding specific dietary concerns are advised to visit www.DunkinDonuts.com or call our customer care line at 800-859-5339.
+-  -  -  -  -  -  -  -  -  -
+Coffee and
+dunkin.txt:90:Chocolate Crumb Cake Donut Chocolate Dipped French Cruller Chocolate Dulce de Leche Donut Chocolate Frosted Cake Donut Chocolate Frosted Coffee Roll Chocolate Frosted Donut
+dunkin.txt:522:Maple Creme Drizzle Donut Maple Crumb Cake Donut Maple Frosted Coffee Roll Maple Frosted Donut
+dunkin.txt:812:Vanilla Frosted Coffee Roll Vanilla Frosted Donut
+-  -  -  -  -  -  -  -  -  -
+Coffee or
+dunkin.txt:2:1 Stick 1 Donut
+dunkin.txt:4:Allergy sufferers should always read the product ingredient statement and allergen information available at www.DunkinDonuts.com Please note that our restaurants prepare and serve products that contain allergens other than the products you select.
+dunkin.txt:11:Apple Croissant Donut
+dunkin.txt:12:Apple Crumb Topped Donut Apple Stick
+dunkin.txt:14:Apple Streusel Donut
+dunkin.txt:15:Apple n Spice Donut
+dunkin.txt:19:Bavarian Kreme Donut
+dunkin.txt:39:Blueberry Butternut Donut Blueberry Crumb Cake Donut Blueberry Crumb Donut
+dunkin.txt:40:Blueberry Coffee Cake Brownie
+dunkin.txt:41:Blueberry Coffee Small
+dunkin.txt:43:Boston Kreme Croissant Donut Boston Kreme Donut
+dunkin.txt:44:Boston Kreme Drizzle Donut Boston Kreme Sprinkles Donut Boston Scream Donut
+dunkin.txt:45:Bowtie Donut
+dunkin.txt:48:Butternut Donut
+dunkin.txt:50:Buzzer Beater Donut
+dunkin.txt:59:Caramel Cheesecake Square Donut Cheesecake Square Donut Chocolate Butternut Donut Chocolate Coconut Donut Chocolate Creme Donut
+dunkin.txt:60:Caramel Coffee Small
+dunkin.txt:61:Caramel Coffee with Cream Large Caramel Coffee with Cream Medium
+dunkin.txt:62:Caramel Coffee with Cream Small Caramel Coffee with Cream Xlarge Caramel Mocha Coffee Large
+dunkin.txt:63:Caramel Iced Coffee Large 32 fl oz 230 0 0 0 0 5 100 52 0 49 5 0 2 15 2
+dunkin.txt:64:Caramel Iced Coffee Medium 24 fl oz 170 0 0 0 0 0 75 39 0 37 4 0 0 15 2
+dunkin.txt:65:Caramel Iced Coffee Small 16 fl oz 110 0 0 0 0 0 50 26 0 24 2 0 0 8 2
+dunkin.txt:66:Caramel Iced Coffee with Cream 16 fl oz 170 50 6 3.5 0 20 60 27 0 24 3 4 0 10 2 Small
+dunkin.txt:67:Caramel Iced Coffee with Cream 24 fl oz 260 80 9 5 0 30 90 41 0 37 5 6 2 15 2 Medium
+dunkin.txt:68:Caramel Iced Coffee with Cream 32 fl oz 340 110 12 7 0 45 125 54 0 49 6 8 2 25 2 Large
+dunkin.txt:72:Caramel Mocha Iced Coffee Caramel Mocha Iced Coffee Cream Large
+dunkin.txt:73:Caramel Mocha Iced Coffee Cream Medium
+dunkin.txt:74:Caramel Mocha Iced Coffee Cream Small
+dunkin.txt:75:Caramel Mocha Iced Coffee Large 32 fl oz 230 5 0 0 0 0 45 54 1 48 4 0 0 6 0
+dunkin.txt:76:Caramel Mocha Iced Coffee Medium
+dunkin.txt:87:Chocolate Chip Coffee Cake English Muffin
+dunkin.txt:90:Chocolate Crumb Cake Donut Chocolate Dipped French Cruller Chocolate Dulce de Leche Donut Chocolate Frosted Cake Donut Chocolate Frosted Coffee Roll Chocolate Frosted Donut
+dunkin.txt:91:Chocolate Frosted Donut with Sprinkles
+dunkin.txt:92:Chocolate Headlight Donut Chocolate Iced Bismark Chocolate Long John
+dunkin.txt:93:Chocolate Peanut Butter Creme Donut
+dunkin.txt:95:Cinnamon Donut
+dunkin.txt:96:Cinnamon Guava Donut Cinnamon Stick
+dunkin.txt:100:Coconut Donut
+dunkin.txt:101:Coconut Drizzle Dulce de Leche Donut
+dunkin.txt:102:Coconut Dulce de Leche Donut Coconut Guava Donut
+dunkin.txt:104:Coffee
+dunkin.txt:105:Coffee Cake Muffin
+dunkin.txt:106:Coffee Coffee Coffee Coffee Coffee Coffee Coffee Coffee
+dunkin.txt:107:Coffee Extra Large
+dunkin.txt:108:Coffee Large
+dunkin.txt:109:Coffee Medium
+dunkin.txt:110:Coffee Roll
+dunkin.txt:111:Coffee Small
+dunkin.txt:112:Coffee with Cream Large Coffee with Cream Medium Coffee with Cream Small Coffee with Cream XLarge Coffee with Cream and Sugar Large
+dunkin.txt:113:Coffee with Cream and Sugar Medium
+dunkin.txt:114:Coffee with Cream and Sugar Small
+dunkin.txt:115:Coffee with Cream and Sugar XLarge
+dunkin.txt:116:Coffee with Skim Milk Large Coffee with Skim Milk Medium Coffee with Skim Milk Small Coffee with Skim Milk XLarge Coffee with Skim Milk and Splenda Large
+dunkin.txt:117:Coffee with Skim Milk and Splenda Medium
+dunkin.txt:118:Coffee with Skim Milk and Splenda Small
+dunkin.txt:119:Coffee with Skim Milk and Splenda XLarge
+dunkin.txt:120:Coffee with Skim Milk and Sugar Large
+dunkin.txt:121:Coffee with Skim Milk and Sugar Medium
+dunkin.txt:122:Coffee with Skim Milk and Sugar Small
+dunkin.txt:123:Coffee with Skim Milk and Sugar XLarge
+dunkin.txt:124:Coffee with Splenda Large Coffee with Splenda Medium Coffee with Splenda Small Coffee with Splenda XLarge Coffee with Sugar Large
+dunkin.txt:125:Coffee with Sugar Medium Coffee with Sugar Small
+dunkin.txt:126:Coffee with Sugar XLarge Coffee with Whole Milk Large Coffee with Whole Milk Medium Coffee with Whole Milk Small Coffee with Whole Milk XLarge
+dunkin.txt:127:Coffee with Whole Milk and Large
+dunkin.txt:128:Coffee with Whole Milk and Medium
+dunkin.txt:129:Coffee with Whole Milk and Small
+dunkin.txt:130:Coffee with Whole Milk and XLarge
+dunkin.txt:141:Crumb Cake Donut
+dunkin.txt:167:Donuts
+dunkin.txt:168:Double Chocolate Donut
+dunkin.txt:170:Dunkin' Donuts has made a reasonable effort to provide nutritional and ingredient information based upon standard product formulations and following the FDA guidelines using formulation and nutrition labeling software. Variations may occur due to: seasonal conditions; regional differences; ingredient substitutions and differences in product assembly or size at the restaurant. Test products, limited time offers and regional menu variations may not be included and not all items listed may be available in all restaurants. The information on these printed materials may vary from that which may be available in our restaurants. We will update www.DunkinDonuts.com frequently, so please revisit this site for the
+dunkin.txt:175:Egg & Cheese on English Muffin Egg & Cheese on a Plain Bagel Egg White Veggie Flatbread Glazed Donut Breakfast Sandwich Ham, Egg & Cheese on Biscuit Ham, Egg & Cheese on Croissant Ham, Egg & Cheese on English Muffin
+dunkin.txt:181:Fall Harvest Donut
+dunkin.txt:185:Football Donut
+dunkin.txt:186:French Apple Donut
+dunkin.txt:189:French Vanilla Coffee Small
+dunkin.txt:199:French Vanilla Swirl Hot with Cream Large French Vanilla Swirl Hot with Cream Medium French Vanilla Swirl Hot with Cream Small French Vanilla Swirl Hot with Cream XLarge Hazelnut Coffee Large Hazelnut Coffee Medium Hazelnut Coffee Small
+dunkin.txt:206:Frosted Chocolate Creme Donut Frosted Maple Creme Donut Frosted Strawberry Dream Donut Frosted Vanilla Creme Donut Glazed Apple Maple Donut Glazed Bavarian Kreme Donut Glazed Blueberry Donut
+dunkin.txt:213:Frozen Caramel Coffee Coolatta 16 fl oz 300 0 0 0 0 5 90 72 0 71 5 6 0 20 0 with Skim Milk Small
+dunkin.txt:214:Frozen Caramel Coffee Coolatta 16 fl oz 330 35 4 2.5 0 15 90 72 0 71 5 4 0 20 0 with Milk Small
+dunkin.txt:215:Frozen Caramel Coffee Coolatta 16 fl oz 490 210 23 15 0.5 80 90 71 0 65 5 15 2 15 0 with Cream Small
+dunkin.txt:216:Frozen Caramel Coffee Coolatta 24 fl oz 450 0 0 0 0 5 135 108 0 106 8 8 0 30 0 with Skim Milk Medium
+dunkin.txt:217:Frozen Caramel Coffee Coolatta 24 fl oz 500 50 6 3.5 0 20 140 108 0 106 8 8 0 30 0 with Milk Medium
+dunkin.txt:218:Frozen Caramel Coffee Coolatta 24 fl oz 740 310 35 22 1 125 130 106 0 97 7 25 2 25 0 with Cream Medium
+dunkin.txt:219:Frozen Caramel Coffee Coolatta 32 fl oz 600 0 0 0 0 10 180 145 0 141 11 10 0 40 0 with Skim Milk Large
+dunkin.txt:220:Frozen Caramel Coffee Coolatta 32 fl oz 670 70 8 4.5 0 30 180 144 0 141 10 10 0 40 0 with Milk Large
+dunkin.txt:221:Frozen Caramel Coffee Coolatta 32 fl oz 990 420 47 29 1.5 165 180 141 0 130 9 35 4 35 0 with Cream Large
+dunkin.txt:222:Frozen Coffee Coolatta
+dunkin.txt:223:Frozen Coffee Coolatta Lite 24 fl oz 130 40 4.5 2.5 0 15 75 23 0 17 4 4 0 15 0 Medium - 75% fewer calories
+dunkin.txt:224:Frozen Coffee Coolatta Lite Large 32 fl oz 170 50 6 3.5 0 20 100 30 0 22 6 6 0 20 0 - 75% fewer calories than our
+dunkin.txt:225:Frozen Coffee Coolatta Lite Small - 16 fl oz 80 25 3 1.5 0 10 50 15 0 11 3 2 0 10 0 75% fewer calories than our Small
+dunkin.txt:226:Frozen Coffee Coolatta made with Cream
+dunkin.txt:227:Frozen Coffee Coolatta with Cream 16 fl oz 400 210 23 15 0.5 80 75 49 0 43 3 15 2 10 0 Small
+dunkin.txt:228:Frozen Coffee Coolatta with Cream 24 fl oz 600 310 35 22 1 120 110 73 0 65 5 25 2 20 0 Medium
+dunkin.txt:229:Frozen Coffee Coolatta with Cream 32 fl oz 800 420 47 29 1.5 160 150 97 0 86 7 30 4 25 0 Large
+dunkin.txt:230:Frozen Coffee Coolatta with Milk 16 fl oz 240 35 4 2.5 0 10 80 50 0 49 4 4 0 15 0 Small
+dunkin.txt:231:Frozen Coffee Coolatta with Milk 24 fl oz 360 50 6 3.5 0 20 120 75 0 73 6 6 0 20 0 Medium
+dunkin.txt:232:Frozen Coffee Coolatta with Milk 32 fl oz 480 70 8 4.5 0 25 160 100 0 98 8 8 0 30 0 Large
+dunkin.txt:233:Frozen Coffee Coolatta with Skim 16 fl oz 210 0 0 0 0 0 80 50 0 49 4 4 0 15 0 Milk Small
+dunkin.txt:234:Frozen Coffee Coolatta with Skim 24 fl oz 310 0 0 0 0 5 115 75 0 74 6 8 0 25 0 Milk Medium
+dunkin.txt:235:Frozen Coffee Coolatta with Skim 32 fl oz 410 0 0 0 0 5 160 101 0 98 8 10 0 30 0 Milk Large
+dunkin.txt:237:Frozen French Vanilla Swirl Coffee 16 fl oz 300 0 0 0 0 5 105 72 0 70 5 6 0 20 0 Coolatta with Skim Milk Small
+dunkin.txt:238:Frozen French Vanilla Swirl Coffee 16 fl oz 330 35 4 2.5 0 15 105 72 0 70 5 4 0 20 0 Coolatta with Whole Milk Small
+dunkin.txt:239:Frozen French Vanilla Swirl Coffee 16 fl oz 490 210 23 14 0.5 80 100 70 0 64 5 15 2 15 0 Coolatta with Cream Small
+dunkin.txt:240:Frozen French Vanilla Swirl Coffee 24 fl oz 450 0 0 0 0 5 160 108 0 105 8 8 0 30 0 Coolatta with Skim Milk Medium
+dunkin.txt:241:Frozen French Vanilla Swirl Coffee 24 fl oz 500 50 6 3.5 0 20 160 108 0 104 8 8 0 30 0 Coolatta with Whole Milk Medium
+dunkin.txt:242:Frozen French Vanilla Swirl Coffee 24 fl oz 740 310 35 22 1 120 150 106 0 96 7 25 2 25 0 Coolatta with Cream Medium
+dunkin.txt:243:Frozen French Vanilla Swirl Coffee 32 fl oz 600 0 0 0 0 10 210 144 0 140 11 10 0 40 0 Coolatta with Skim Milk Large
+dunkin.txt:244:Frozen French Vanilla Swirl Coffee 32 fl oz 670 70 8 4.5 0 30 210 144 0 139 10 10 0 35 0 Coolatta with Whole Milk Large
+dunkin.txt:245:Frozen French Vanilla Swirl Coffee 32 fl oz 990 420 46 29 1.5 165 200 141 0 128 9 35 4 35 0 Coolatta with Cream Large
+dunkin.txt:246:Frozen Hazelnut Swirl Coffee 16 fl oz 300 0 0 0 0 5 105 72 0 70 5 6 0 20 0 Coolatta with Skim Milk Small
+dunkin.txt:247:Frozen Hazelnut Swirl Coffee 16 fl oz 330 35 4 2.5 0 15 105 72 0 70 5 4 0 20 0 Coolatta with Whole Milk Small
+dunkin.txt:248:Frozen Hazelnut Swirl Coffee 16 fl oz 490 210 23 14 0.5 80 100 71 0 64 5 15 2 15 0 Coolatta with Cream Small
+dunkin.txt:249:Frozen Hazelnut Swirl Coffee 24 fl oz 450 0 0 0 0 5 160 108 0 105 8 8 0 30 0 Coolatta with Skim Milk Medium
+dunkin.txt:250:Frozen Hazelnut Swirl Coffee 24 fl oz 500 50 6 3.5 0 20 160 108 0 104 8 8 0 30 0 Coolatta with Whole Milk Medium
+dunkin.txt:251:Frozen Hazelnut Swirl Coffee 24 fl oz 740 310 35 22 1 120 150 106 0 96 7 25 2 25 0 Coolatta with Cream Medium
+dunkin.txt:252:Frozen Hazelnut Swirl Coffee 32 fl oz 600 0 0 0 0 10 210 145 0 140 11 10 0 40 0 Coolatta with Skim Milk Large
+dunkin.txt:253:Frozen Hazelnut Swirl Coffee 32 fl oz 670 70 8 4.5 0 30 210 144 0 139 10 10 0 35 0 Coolatta with Whole Milk Large
+dunkin.txt:254:Frozen Hazelnut Swirl Coffee 32 fl oz 990 420 46 29 1.5 165 200 141 0 128 9 35 4 35 0 Coolatta with Cream Large
+dunkin.txt:256:Frozen Mocha Coffee Coolatta with 16 fl oz 300 5 0 0 0 0 90 72 1 68 5 4 0 15 0 Skim Milk Small
+dunkin.txt:257:Frozen Mocha Coffee Coolatta with 16 fl oz 330 40 4.5 2.5 0 10 90 72 1 68 5 4 0 15 0 Milk Small
+dunkin.txt:258:Frozen Mocha Coffee Coolatta with 16 fl oz 490 210 24 15 0.5 80 85 70 1 62 4 15 2 10 0 Cream Small
+dunkin.txt:259:Frozen Mocha Coffee Coolatta with 24 fl oz 450 5 0.5 0 0 5 135 108 2 103 8 8 0 25 0 Skim Milk Medium
+dunkin.txt:260:Frozen Mocha Coffee Coolatta with 24 fl oz 500 60 7 4 0 20 135 108 2 102 7 6 0 20 0 Milk Medium
+dunkin.txt:261:Frozen Mocha Coffee Coolatta with 24 fl oz 740 320 36 22 1 120 130 105 2 94 6 25 2 20 0 Cream Medium
+dunkin.txt:262:Frozen Mocha Coffee Coolatta with 32 fl oz 600 10 1 0.5 0 5 180 144 2 137 10 10 0 30 0 Skim Milk Large
+dunkin.txt:263:Frozen Mocha Coffee Coolatta with 32 fl oz 670 80 9 5 0 25 180 143 2 136 10 8 0 30 0 Milk Large
+dunkin.txt:264:Frozen Mocha Coffee Coolatta with 32 fl oz 990 430 47 29 1.5 160 170 141 2 125 8 30 4 25 0 Cream Large
+dunkin.txt:265:Frozen Pumpkin Swirl Coffee 16 fl oz 300 0 0 0 0 5 135 71 0 70 6 6 0 20 0 Coolatta with Skim Milk Small
+dunkin.txt:266:Frozen Pumpkin Swirl Coffee 16 fl oz 330 35 4 2.5 0 15 135 71 0 70 5 4 0 20 0 Coolatta with Whole Milk Small
+dunkin.txt:267:Frozen Pumpkin Swirl Coffee 16 fl oz 490 210 23 15 0.5 80 130 70 0 64 5 15 2 20 0 Coolatta with Cream Small
+dunkin.txt:268:Frozen Pumpkin Swirl Coffee 24 fl oz 450 0 0 0 0 5 200 107 0 105 9 8 2 35 0 Coolatta with Skim Milk Medium
+dunkin.txt:269:Frozen Pumpkin Swirl Coffee 24 fl oz 500 50 6 3.5 0 20 200 107 0 104 8 6 2 30 0 Coolatta with Whole Milk Medium
+dunkin.txt:270:Frozen Pumpkin Swirl Coffee 24 fl oz 740 310 35 22 1 120 190 105 0 96 7 25 4 30 0 Coolatta with Cream Medium
+dunkin.txt:271:Frozen Pumpkin Swirl Coffee 32 fl oz 600 5 0 0 0 5 270 143 0 140 12 10 2 45 0 Coolatta with Skim Milk Large
+dunkin.txt:272:Frozen Pumpkin Swirl Coffee 32 fl oz 670 70 8 4.5 0 25 270 142 0 139 11 8 2 40 0 Coolatta with Whole Milk Large
+dunkin.txt:273:Frozen Pumpkin Swirl Coffee Coolatta with Cream Large
+dunkin.txt:274:Frozen Snickerdoodle Coffee 16 fl oz 300 0 0 0 0 5 105 72 0 71 5 6 0 20 0 Coolatta with Skim Milk Small
+dunkin.txt:275:Frozen Snickerdoodle Coffee 16 fl oz 330 35 4 2.5 0 15 105 72 0 70 5 4 0 20 0 Coolatta with Whole Milk Small
+dunkin.txt:276:Frozen Snickerdoodle Coffee 16 fl oz 500 210 23 14 0.5 80 105 71 0 65 5 15 2 15 0 Coolatta with Cream Small
+dunkin.txt:277:Frozen Snickerdoodle Coffee 24 fl oz 450 0 0 0 0 5 160 108 0 106 8 8 0 30 0 Coolatta with Skim Milk Medium
+dunkin.txt:278:Frozen Snickerdoodle Coffee 24 fl oz 500 50 6 3.5 0 20 160 108 0 105 8 8 0 30 0 Coolatta with Whole Milk Medium
+dunkin.txt:279:Frozen Snickerdoodle Coffee 24 fl oz 740 310 35 22 1 120 150 106 0 97 7 25 2 25 0 Coolatta with Cream Medium
+dunkin.txt:280:Frozen Snickerdoodle Coffee 32 fl oz 600 0 0 0 0 10 210 145 0 141 11 10 0 40 2 Coolatta with Skim Milk Large
+dunkin.txt:281:Frozen Snickerdoodle Coffee 32 fl oz 670 70 8 4.5 0 30 210 144 0 141 10 10 0 40 2 Coolatta with Whole Milk Large
+dunkin.txt:282:Frozen Snickerdoodle Coffee 32 fl oz 990 420 47 29 1.5 165 210 141 0 129 9 35 4 35 2 Coolatta with Cream Large
+dunkin.txt:283:Frozen Sugar Cookie Coffee 16 fl oz 300 0 0 0 0 5 105 73 0 71 5 6 0 20 0 Coolatta with Skim Milk Small
+dunkin.txt:284:Frozen Sugar Cookie Coffee 16 fl oz 340 35 4 3 2.5 15 105 72 0 70 5 4 0 20 0 Coolatta with Whole Milk Small
+dunkin.txt:285:Frozen Sugar Cookie Coffee 16 fl oz 500 210 23 14 0.5 80 105 71 0 65 5 15 2 15 0 Coolatta with Cream Small
+dunkin.txt:286:Frozen Sugar Cookie Coffee 24 fl oz 450 0 0 0 0 5 160 109 0 106 8 8 0 30 0 Coolatta with Skim Milk Medium
+dunkin.txt:287:Frozen Sugar Cookie Coffee 24 fl oz 500 50 6 4 3.5 20 160 108 0 106 8 8 0 30 0 Coolatta with Whole Milk Medium
+dunkin.txt:288:Frozen Sugar Cookie Coffee 24 fl oz 740 310 35 22 1 120 150 106 0 97 7 25 2 25 0 Coolatta with Cream Medium
+dunkin.txt:289:Frozen Sugar Cookie Coffee 32 fl oz 610 0 0 0 0 10 210 145 0 141 11 10 0 40 0 Coolatta with Skim Milk Large
+dunkin.txt:290:Frozen Sugar Cookie Coffee 32 fl oz 670 70 8 5 4.5 30 210 141 0 141 10 10 0 40 0 Coolatta with Whole Milk Large
+dunkin.txt:291:Frozen Sugar Cookie Coffee 32 fl oz 990 420 47 29 1.5 165 210 142 0 129 9 35 4 35 0 Coolatta with Cream Large
+dunkin.txt:295:Glazed Caramel Donut
+dunkin.txt:296:Glazed Chocolate Creme Donut Glazed Chocolate Donut
+dunkin.txt:298:Glazed Croissant Donut
+dunkin.txt:299:Glazed Donut
+dunkin.txt:300:Glazed Dulce de Leche Donut Glazed Guava Donut
+dunkin.txt:301:Glazed Fritter Homestyle Apple Pie Original Coffee Cake Plain Croissant Pretzel Twist Pumpkin Coffee Cake
+dunkin.txt:302:Glazed Jelly Donut
+dunkin.txt:304:Glazed Lemon Donut
+dunkin.txt:305:Glazed Old Fashioned Donut Glazed Stick
+dunkin.txt:307:Glazed Strawberry Donut
+dunkin.txt:308:Glazed Vanilla Creme Donut Great White Donut
+dunkin.txt:336:Ground Dark Roast Packaged 1 Packaged Coffee Coffee Pack
+dunkin.txt:337:Ground Dunkin' Decaf Packaged 1 Packaged Coffee Coffee Pack
+dunkin.txt:338:Ground French Vanilla Packaged 1 Packaged Coffee Coffee Pack
+dunkin.txt:339:Ground Hazelnut Packaged Coffee 1 Packaged Coffee Pack
+dunkin.txt:340:Ground Original Blend Packaged 1 Packaged Coffee Coffee Pack
+dunkin.txt:341:Guava Burst Donut Guayaba Burst Donut Halloween Pumpkin Donut Jelly Donut
+dunkin.txt:346:Hazelnut Coffee XLarge
+dunkin.txt:347:Hazelnut Packaged Coffee 1 Packaged Coffee Pack
+dunkin.txt:348:Hazelnut Swirl Hot Coffee Large Hazelnut Swirl Hot Coffee Medium Hazelnut Swirl Hot Coffee Small Hazelnut Swirl Hot Coffee XLarge Hazelnut Swirl Hot Coffee with Cream Large
+dunkin.txt:349:Hazelnut Swirl Hot Coffee with Cream Medium
+dunkin.txt:350:Hazelnut Swirl Hot Coffee with Cream Small
+dunkin.txt:351:Hazelnut Swirl Hot Coffee with Cream XLarge
+dunkin.txt:356:Hazelnut Swirl Iced Coffee Cream Medium
+dunkin.txt:357:Hazelnut Swirl Iced Coffee Cream Small
+dunkin.txt:358:Hazelnut Swirl Iced Coffee Hazelnut Swirl Iced Coffee Cream Large
+dunkin.txt:372:Hot Coffee Large Hot Coffee Medium Hot Coffee Small Hot Coffee XLarge Hot Coffee with
+dunkin.txt:373:Hot Coffee with
+dunkin.txt:374:Hot Coffee with Almond Milk Large
+dunkin.txt:375:Hot Coffee with Almond Milk Medium
+dunkin.txt:376:Hot Coffee with Almond Milk Small
+dunkin.txt:377:Hot Coffee with Almond Milk XLarge
+dunkin.txt:413:Iced Coffee
+dunkin.txt:414:Iced Coffee Large
+dunkin.txt:415:Iced Coffee Medium
+dunkin.txt:416:Iced Coffee Small
+dunkin.txt:417:Iced Coffee with Almond Milk Large
+dunkin.txt:418:Iced Coffee with Almond Milk Medium
+dunkin.txt:419:Iced Coffee with Almond Milk Small
+dunkin.txt:420:Iced Coffee with Cream Large Iced Coffee with Cream Medium Iced Coffee with Cream Small Iced Coffee with Cream and Sugar Large
+dunkin.txt:421:Iced Coffee with Cream and Sugar Medium
+dunkin.txt:422:Iced Coffee with Cream and Sugar Small
+dunkin.txt:423:Iced Coffee with Milk Large
+dunkin.txt:424:Iced Coffee with Milk Medium Iced Coffee with Milk Small
+dunkin.txt:425:Iced Coffee with Milk and Sugar Large
+dunkin.txt:426:Iced Coffee with Milk and Sugar Medium
+dunkin.txt:427:Iced Coffee with Milk and Sugar Small
+dunkin.txt:428:Iced Coffee with Skim Milk
+dunkin.txt:429:Iced Coffee with Skim Milk Medium
+dunkin.txt:430:Iced Coffee with Skim Milk Splenda Large
+dunkin.txt:431:Iced Coffee with Skim Milk Splenda Medium
+dunkin.txt:432:Iced Coffee with Skim Milk Splenda Small
+dunkin.txt:433:Iced Coffee with Skim Milk Sugar Large
+dunkin.txt:434:Iced Coffee with Skim Milk Sugar Medium
+dunkin.txt:435:Iced Coffee with Skim Milk Sugar Small
+dunkin.txt:436:Iced Coffee with Splenda Large Iced Coffee with Splenda Medium Iced Coffee with Splenda Small Iced Coffee with Sugar Large Iced Coffee with Sugar Medium Iced Coffee with Sugar Small Iced Dunkin Dark® Roast Coffee with Cream and Sugar Large Iced Dunkin Dark® Roast Coffee with Cream and Sugar Medium Iced Dunkin Dark® Roast Coffee with Cream and Sugar Small
+dunkin.txt:437:Iced Dunkin Dark® Roast Coffee with Skim Milk and Splenda Large
+dunkin.txt:438:Iced Dunkin Dark® Roast Coffee with Skim Milk and Splenda Medium
+dunkin.txt:439:Iced Dunkin Dark® Roast Coffee with Skim Milk and Splenda Small Mocha Iced Coffee with Cream Large
+dunkin.txt:499:Large Frozen Coffee Coolatta
+dunkin.txt:513:Lemon Donut
+dunkin.txt:521:Maple Apple Croissant Donut Maple Creme Donut
+dunkin.txt:522:Maple Creme Drizzle Donut Maple Crumb Cake Donut Maple Frosted Coffee Roll Maple Frosted Donut
+dunkin.txt:523:Maple Frosted Sprinkles Donut Maple Vanilla Creme Donut Marble Frosted Donut
+dunkin.txt:532:Mocha Coffee Large
+dunkin.txt:533:Mocha Coffee Medium
+dunkin.txt:534:Mocha Coffee Medium Mocha Coffee Small Mocha Coffee XLarge
+dunkin.txt:535:Mocha Coffee Small
+dunkin.txt:536:Mocha Coffee with Mocha Coffee with Mocha Coffee with Mocha Coffee with Coffee Small
+dunkin.txt:537:Mocha Iced Coffee with Cream Medium
+dunkin.txt:538:Mocha Iced Coffee with Cream Small
+dunkin.txt:546:Mocha Swirl Coffee Extra Large Mocha Swirl Coffee Large
+dunkin.txt:547:Mocha Swirl Coffee Medium Mocha Swirl Coffee Small
+dunkin.txt:548:Mocha Swirl Coffee with Cream Extra Large
+dunkin.txt:549:Mocha Swirl Coffee with Cream Large
+dunkin.txt:550:Mocha Swirl Coffee with Cream Medium
+dunkin.txt:551:Mocha Swirl Coffee with Cream Small
+dunkin.txt:558:Old Fashioned Cake Donut PEEPS Donut
+dunkin.txt:571:Packaged Coffee
+dunkin.txt:573:Peanut Butter Creme Donut Peanut Butter Creme and Jelly Donut
+dunkin.txt:574:Peanut Donut
+dunkin.txt:575:Peppermint Mocha Hot Coffee Large
+dunkin.txt:576:Peppermint Mocha Hot Coffee Medium
+dunkin.txt:577:Peppermint Mocha Hot Coffee Small
+dunkin.txt:578:Peppermint Mocha Hot Coffee XLarge
+dunkin.txt:579:Peppermint Mocha Hot Coffee with Cream Large
+dunkin.txt:580:Peppermint Mocha Hot Coffee with Cream Medium
+dunkin.txt:581:Peppermint Mocha Hot Coffee with Cream Small
+dunkin.txt:582:Peppermint Mocha Hot Coffee with Cream XLarge
+dunkin.txt:594:Peppermint Mocha Iced Coffee Large
+dunkin.txt:595:Peppermint Mocha Iced Coffee Medium
+dunkin.txt:596:Peppermint Mocha Iced Coffee Small
+dunkin.txt:597:Peppermint Mocha Iced Coffee with Cream Large
+dunkin.txt:598:Peppermint Mocha Iced Coffee with Cream Medium Peppermint Mocha Iced Coffee with Cream Small
+dunkin.txt:611:Philly Creme Donut
+dunkin.txt:612:Pittsburgh Donut
+dunkin.txt:615:Plain Stick Donut
+dunkin.txt:616:Play Ball Donut
+dunkin.txt:618:Powdered Donut
+dunkin.txt:621:Printed on 11-26-2015 . Information can change frequently, so check www.DunkinDonuts.com for the most current information. Before placing your order, please inform your server if a person in your party has a food allergy.
+dunkin.txt:623:Pumpkin Cheesecake Square Donut
+dunkin.txt:624:Pumpkin Crumb Cake Donut Pumpkin Donut
+dunkin.txt:629:Pumpkin Swirl Hot Coffee with Cream Small
+dunkin.txt:630:Pumpkin Swirl Hot Coffee with Cream XLarge
+dunkin.txt:637:Pumpkin Swirl Iced Coffee
+dunkin.txt:638:Pumpkin Swirl Iced Coffee Pumpkin Swirl Iced Coffee Cream Large
+dunkin.txt:639:Pumpkin Swirl Iced Coffee Pumpkin Swirl Iced Coffee Medium
+dunkin.txt:646:Raspberry Coffee Small Snickerdoodle Hot Coffee Large Snickerdoodle Hot Coffee Medium Snickerdoodle Hot Coffee Small Snickerdoodle Hot Coffee XLarge Snickerdoodle Hot Coffee with Cream Large
+dunkin.txt:651:Reeses Peanut Butter Square Donut
+dunkin.txt:688:Snickerdoodle Croissant Donut Sour Cream Donut
+dunkin.txt:689:Snickerdoodle Hot Coffee with Cream Medium Snickerdoodle Hot Coffee with Cream Small
+dunkin.txt:690:Snickerdoodle Hot Coffee with Cream XLarge
+dunkin.txt:703:Snickerdoodle Iced Coffee Large Snickerdoodle Iced Coffee Medium Snickerdoodle Iced Coffee Small Snickerdoodle Iced Coffee with Cream Large
+dunkin.txt:704:Snickerdoodle Iced Coffee with Cream Medium
+dunkin.txt:705:Snickerdoodle Iced Coffee with Cream Small
+dunkin.txt:717:Spiced Chocolate Dulce de Leche Donut
+dunkin.txt:718:Spiced Dulce de Leche Donut
+dunkin.txt:728:Strawberry Donut
+dunkin.txt:729:Strawberry Dream Donut Strawberry Dream Swirl Donut Strawberry Frosted Donut Strawberry Frosted Sprinkles Donut
+dunkin.txt:733:Strawberry Long John Strawberry Shortcake Donut Sugared Cake Donut
+dunkin.txt:736:Sugar Cookie Hot Coffee with Cream Small
+dunkin.txt:737:Sugar Cookie Hot Coffee with Cream XLarge
+dunkin.txt:750:Sugar Cookie Iced Coffee Large Sugar Cookie Iced Coffee Medium Sugar Cookie Iced Coffee Small
+dunkin.txt:751:Sugar Cookie Iced Coffee with 16 fl oz 180 50 6 3.5 0 20 50 28 0 25 3 4 0 8 0 Cream Small
+dunkin.txt:752:Sugar Cookie Iced Coffee with 24 fl oz 260 80 9 5 0 35 75 42 0 37 4 8 0 10 0 Cream Medium
+dunkin.txt:753:Sugar Cookie Iced Coffee with Cream Large
+dunkin.txt:773:Sugared Raised Donut
+dunkin.txt:785:Taillight Donut
+dunkin.txt:791:Toasted Almond Coffee Small 10 fl oz 10 0 0 0 0 0 5 1 0 0 0 0 0 0 0
+dunkin.txt:792:Toasted Coconut Donut
+dunkin.txt:810:Vanilla Berry Shortcake Donut Vanilla Chocolate Donut Vanilla Creme Donut
+dunkin.txt:812:Vanilla Frosted Coffee Roll Vanilla Frosted Donut
+dunkin.txt:813:Vanilla Frosted Sprinkles Donut Vanilla Headlight Donut Vanilla Long John
+dunkin.txt:815:Vanilla Peanut Butter Creme Donut
+dunkin.txt:819:Whole Bean Original Blend 1 Packaged Packaged Coffee Coffee Pack
+dunkin.txt:825:most current information. Any customers with further questions regarding specific dietary concerns are advised to visit www.DunkinDonuts.com or call our customer care line at 800-859-5339.
+dunkin.txt:831:than our Medium Frozen Coffee
+dunkin.txt:837:with Cream Small Hazelnut Swirl Iced Coffee Hazelnut Swirl Iced Coffee Medium
+dunkin.txt:838:with Iced Coffee Iced Coffee Iced Coffee Iced Coffee Iced Coffee Iced Coffee
+-  -  -  -  -  -  -  -  -  -

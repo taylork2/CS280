@@ -1,0 +1,16 @@
+// goes with The New Colossus
+
+set skip "---";
+
+print search "colossus.txt" for "poor";
+print skip;
+
+set x search "colossus.txt" for "poor";
+print x;
+print skip;
+
+print x;
+print skip;
+
+set x search "colossus.txt" for "-";
+print x;
