@@ -16,13 +16,11 @@ using namespace std;
 
 map<string, Value*> var;
 map<int, list<SearchTool::SearchResultEntry *> > sort;
-int errcnt2 = 0;
 
 void
 TypeError(string type, int line)
 {
     cerr << "Type error performing " << type << " operator at line " << line << endl;
-	errcnt2++;
 	exit(0);
 }
 
@@ -155,17 +153,20 @@ PTreeIntersect::eval()
 	result2 = sea2-> getResults();
 
 	//filter these 2 to get the intersection
-	map<int, SearchTool::SearchResultEntry *> r1; //map linenum to searchResultEntry
+	map<int, SearchTool::SearchResultEntry *> result1map; //map linenum to searchResultEntry
 	for (list<SearchTool::SearchResultEntry *>::iterator it=result1.begin(); it != result1.end(); it++){
-		r1[(*it)->getLinenum()] = *it;
+		result1map[(*it)->getLinenum()] = *it;
 	}
 
 	//New list where result1 and result2 have matching linenum
 	list<SearchTool::SearchResultEntry *> filteredList;
-	for (list<SearchTool::SearchResultEntry *>::iterator it=result2.begin(); it != result2.end(); it++){
+	for (list<SearchTool::SearchResultEntry *>::iterator it2=result2.begin(); it2 != result2.end(); it2++){
 		try { 
-			filteredList.push_back(r1.at((*it)->getLinenum()));
+			SearchTool::SearchResultEntry* entry;
+			entry = result1map.at((*it2)->getLinenum());
+			filteredList.push_back(entry);
 		} catch(const std::out_of_range& e) {
+			cout << (*it2)->getLinenum() <<endl;
 			continue;
 		}
 	}
@@ -180,16 +181,12 @@ PTreeIntersect::eval()
 
 Value *
 PTreeID::eval()
-{
-	if (left)
-		left -> eval();
-	if (right)
-		right -> eval();
+{	
 	try { 
+		cout << id << endl;
 		return var.at(id);
 	} catch(const std::out_of_range& e) {
 		cout << "Variable " << id << " not set before use at line " << line << endl;
-		errcnt2++;
 	}  
 }
 
